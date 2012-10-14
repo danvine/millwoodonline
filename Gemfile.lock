@@ -46,3 +46,4 @@ DEPENDENCIES
   rack-flash
   sinatra (= 1.1.0)
   sinatra-authentication
+  thin
