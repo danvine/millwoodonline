@@ -11,6 +11,9 @@
     </hgroup>
   </header>
   <div id="main">
+    <% if Rack.const_defined?('Flash') %>
+      <div id='sinatra_authentication_flash'><%= flash[:notice] %> <%= flash[:error] %></div>
+    <% end %>
     <%= yield %>
   </div>
   <footer>

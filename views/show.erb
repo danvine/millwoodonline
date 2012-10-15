@@ -1,9 +1,7 @@
-#sinatra_authentication
-  %h1.page_title
-    - if @user.email
-      = @user.email
-    - elsif @user.fb_uid
-      <fb:name uid=#{@user.fb_uid} linked='false' />
-  - if current_user.admin?
-    %h2 permission level
-    = @user.permission_level
+<div id='sinatra_authentication'>
+  <h1 class='page_title'>
+    <%= @user.email %>
+  </h1>
+  <h2>permission level</h2>
+  <%= @user.permission_level %>
+</div>
