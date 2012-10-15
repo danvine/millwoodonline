@@ -10,3 +10,7 @@ DataMapper.setup(:default, 'postgres://lbhhmtafaowdgx:tpjR5sVtWEswPaJ9tsQ7q-_cdj
 DataMapper.auto_upgrade!
 use Rack::Session::Cookie, :secret => 'superdupersecret'
 use Rack::Flash
+
+get '/' do
+  current_user.to_json
+end
