@@ -2,6 +2,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     addressable (2.2.8)
+    daemons (1.1.9)
     data_objects (0.10.10)
       addressable (~> 2.1)
     dm-core (1.2.0)
@@ -20,9 +21,13 @@ GEM
       dm-core (~> 1.2.0)
     do_postgres (0.10.10)
       data_objects (= 0.10.10)
+    eventmachine (1.0.0)
     haml (3.1.7)
     rack (1.4.1)
     rack-flash (0.1.2)
+      rack
+    rack-flash3 (1.0.1)
+      rack
       rack
     rufus-tokyo (1.0.7)
     sinatra (1.1.0)
@@ -39,7 +44,7 @@ GEM
       sinbook
     sinbook (0.1.9)
       yajl-ruby
-    thin (1.4.1)
+    thin (1.5.0)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
@@ -54,7 +59,7 @@ DEPENDENCIES
   dm-migrations
   dm-postgres-adapter
   haml
-  rack-flash
+  rack-flash3
   sinatra (= 1.1.0)
   sinatra-authentication
-  thin
+  thin (= 1.5.0)
