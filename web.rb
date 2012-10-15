@@ -16,7 +16,5 @@ configure do
 end
 
 get '/' do
-  @title = 'Millwood Online'
-  @user = current_user
   erb :home
 end
