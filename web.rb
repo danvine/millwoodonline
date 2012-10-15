@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'sinatra'
-require 'haml'
 require "dm-core"
 require "dm-migrations"
 require "digest/sha1"
@@ -12,7 +11,8 @@ use Rack::Session::Cookie, :secret => 'superdupersecret'
 use Rack::Flash
 
 configure do
-    set :template_engine, :erb
+    #set :template_engine, :erb
+    #set :sinatra_authentication_view_path, Pathname(__FILE__).dirname.expand_path + "views/"
 end
 
 get '/' do
