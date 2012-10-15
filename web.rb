@@ -11,6 +11,8 @@ use Rack::Session::Cookie, :secret => 'superdupersecret'
 use Rack::Flash
 
 configure do
+    set :static, true
+    set :public_folder, Proc.new { File.join(root, "public") }
     set :template_engine, :erb
     set :sinatra_authentication_view_path, Pathname(__FILE__).dirname.expand_path + "views/"
 end
