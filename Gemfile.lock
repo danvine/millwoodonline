@@ -1,3 +1,17 @@
+GIT
+  remote: git://github.com/maxjustus/sinatra-authentication.git
+  revision: 57b60e3c57057ca57a6380d85a8b97eef8075b2f
+  specs:
+    sinatra-authentication (0.4.2)
+      dm-core
+      dm-migrations
+      dm-timestamps
+      dm-validations
+      rack-flash3
+      rufus-tokyo
+      sinatra
+      sinbook
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -24,8 +38,6 @@ GEM
     eventmachine (1.0.0)
     haml (3.1.7)
     rack (1.4.1)
-    rack-flash (0.1.2)
-      rack
     rack-flash3 (1.0.1)
       rack
       rack
@@ -33,15 +45,6 @@ GEM
     sinatra (1.1.0)
       rack (~> 1.1)
       tilt (~> 1.1)
-    sinatra-authentication (0.4.1)
-      dm-core
-      dm-migrations
-      dm-timestamps
-      dm-validations
-      rack-flash
-      rufus-tokyo
-      sinatra
-      sinbook
     sinbook (0.1.9)
       yajl-ruby
     thin (1.5.0)
@@ -61,5 +64,5 @@ DEPENDENCIES
   haml
   rack-flash3
   sinatra (= 1.1.0)
-  sinatra-authentication
+  sinatra-authentication!
   thin (= 1.5.0)

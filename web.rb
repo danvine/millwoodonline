@@ -11,6 +11,12 @@ DataMapper.auto_upgrade!
 use Rack::Session::Cookie, :secret => 'superdupersecret'
 use Rack::Flash
 
+configure do
+    set :template_engine, :erb
+end
+
 get '/' do
-  current_user.to_json
+  @title = 'Millwood Online'
+  @user = current_user.name if logged_in? 
+  erb :home
 end
