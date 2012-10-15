@@ -1,23 +1,23 @@
-<div id='sinatra_authentication'>
-  <h1 class='page_title'>Login</h1>
-  <form action='/login' method='post'>
-    <div class='field'>
-      <div class='label'>
-        <label for="user_email'">Email</label>
-      </div>
-      <input id='user_email' name='email' size='30' type='text' />
-    </div>
-    <div class='field'>
-      <div class='label'>
-        <label for='user_password'>Password</label>
-      </div>
+<h1 class='page_title'>Login</h1>
+<form action='/login' method='post' class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="user_email'">Email</label>
+    <div class="controls">
+      <input id='user_email' name='email' size='30' type='email' />
+    </div> 
+  </div>
+    
+  <div class="control-group">  
+    <label class="control-label" for='user_password'>Password</label>
+    <div class="controls">
       <input id='user_password' name='password' size='30' type='password' />
     </div>
-    <div class='buttons'>
-      <input type='submit' value='Login' />
-      <a class='sinatra_authentication_link' href='/signup'>
-        Sign up
-      </a>
-    </div>
-  </form>
-</div>
+  </div>
+  
+  <div class="control-group">
+  <div class="controls">
+    <button type='submit' class="btn btn-primary">Sign in</button>
+    <a href='/signup' class="btn">Sign up</a>
+  </div>
+  </div>
+</form>
