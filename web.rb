@@ -17,6 +17,13 @@ configure do
     set :sinatra_authentication_view_path, Pathname(__FILE__).dirname.expand_path + "views/"
 end
 
+before do
+  content_type 'text/html; charset=utf8'
+  expires 300, :public
+  time = Time.new
+  last_modified time.httpdate
+end
+
 get '/' do
   erb :home
 end
@@ -39,4 +46,8 @@ end
 
 post '/contact' do
   erb :home
+end
+
+not_found do
+  erb "<h1>404: Page not found</h1>"
 end
