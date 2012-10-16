@@ -6,4 +6,4 @@ gem "dm-core"
 gem "dm-migrations"
 gem 'dm-postgres-adapter'
 gem 'rack-flash3'
-gem "sinatra-authentication", :git => 'git://github.com/maxjustus/sinatra-authentication.git'
+gem "sinatra-authentication", :git => 'git://github.com/timmillwood/sinatra-authentication.git'

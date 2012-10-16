@@ -31,6 +31,13 @@ configure do
     set :sinatra_authentication_view_path, Pathname(__FILE__).dirname.expand_path + "views/"
 end
 
+helpers do
+  def pathgen(title)
+    ignore = ['a', 'an', 'as', 'at', 'before', 'but', 'by', 'for', 'from', 'is', 'in', 'into', 'like', 'of', 'off', 'on', 'onto', 'per', 'since', 'than', 'the', 'this', 'that', 'to', 'up', 'via', 'with']
+    title.gsub('/[^a-zA-Z0-9\/]+/', '-')
+  end
+end
+
 before do
   content_type 'text/html; charset=utf8'
   expires 300, :public
