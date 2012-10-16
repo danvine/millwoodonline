@@ -1,5 +1,5 @@
 <ul>
 <% @contents.each do |content| %>
-<li><%= content.title %></li>
+<li><a href="<%= content.alias %>"><%= content.title %></a></li>
 <% end %>
 </ul>
