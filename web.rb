@@ -20,3 +20,23 @@ end
 get '/' do
   erb :home
 end
+
+get '/about' do
+  erb :home
+end
+
+get '/work' do
+  erb :home
+end
+
+get '/blog' do
+  erb :home
+end
+
+get '/contact' do
+  erb :home
+end
+
+post '/contact' do
+  erb :home
+end
