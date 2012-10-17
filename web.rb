@@ -5,6 +5,7 @@ require 'digest/sha1'
 require 'rack-flash'
 require 'sinatra-authentication'
 require 'sanitize'
+require 'pony'
 
 DataMapper.setup(:default, 'postgres://lbhhmtafaowdgx:tpjR5sVtWEswPaJ9tsQ7q-_cdj@ec2-54-243-233-216.compute-1.amazonaws.com:5432/d9r9mjl2refokn')
       class Content
@@ -76,11 +77,31 @@ get '/blog/:title' do
 end
 
 get '/contact' do
-  erb :home
+  erb :contact
 end
 
 post '/contact' do
-  erb :home
+  options = {
+  :to => 'tim@millwoodonline.co.uk',
+  :from => params[:email],
+  :subject => params[:name],
+  :body => params[:message],
+  :via => :smtp,
+  :via_options => {
+    :address => 'smtp.sendgrid.net',
+    :port => '587',
+    :domain => 'heroku.com',
+    :user_name => ENV['SENDGRID_USERNAME'],
+    :password => ENV['SENDGRID_PASSWORD'],
+    :authentication => :plain,
+    :enable_starttls_auto => true
+  }
+  }
+  
+  Pony.mail(options)
+  
+  flash[:notice] = "Thanks for your message."
+  redirect '/contact'
 end
 
 not_found do

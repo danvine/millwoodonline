@@ -1,0 +1,27 @@
+		<h1>Contact</h1>
+		<form class="form-horizontal" action="/contact" method="post">
+		<input type="hidden" name="csrf" value="<%= @key %>" />
+		<div class="control-group">
+    <label class="control-label" for="name">Name</label>
+    <div class="controls">
+		<input type="text" id="name" name="name" placeholder="Name">
+    </div>
+		</div>
+		<div class="control-group">
+    <label class="control-label" for="email">Email</label>
+    <div class="controls">
+		<input type="email" id="email" name="email" placeholder="Email">
+    </div>
+		</div>
+		<div class="control-group">
+    <label class="control-label" for="message">Message</label>
+    <div class="controls">
+		<textarea rows="6" id="message" name="message"></textarea>
+    </div>
+		</div>
+		<div class="form-actions">
+    <button type="submit" class="btn btn-primary">Send</button>
+		</div>
+		</form>
+		<iframe width='100%' height='300px' frameBorder='0' src='http://a.tiles.mapbox.com/v3/timmillwood.map-sv87jnk9.html#12/51.820500478363115/-3.0119649710441037'></iframe>
+		<p><small>Millwood Online is based in Abergavenny, Monmouthshire, South Wales, United Kindom.</small></p>
