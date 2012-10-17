@@ -1,9 +1,8 @@
 require 'rubygems'
 require 'sinatra'
-require 'dm-core'
-require 'dm-migrations'
+require 'data_mapper'
 require 'digest/sha1'
-require 'rack-flash'
+#require 'rack-flash'
 require 'sinatra-authentication'
 require 'sanitize'
 
@@ -22,7 +21,7 @@ DataMapper.setup(:default, 'postgres://lbhhmtafaowdgx:tpjR5sVtWEswPaJ9tsQ7q-_cdj
 DataMapper.auto_upgrade!
 
 use Rack::Session::Cookie, :secret => 'superdupersecret'
-use Rack::Flash
+#use Rack::Flash
 
 configure do
     set :static, true
@@ -41,6 +40,16 @@ end
 before do
   content_type 'text/html; charset=utf8'
   expires 300, :public
+ 
+  if request.post?
+   if session[:csrf] != params[:csrf]
+     halt 503, erb('<h1>500: oops</h1>')
+   end
+  end 
+  
+  time = Time.now.to_s
+  @key = Digest::SHA1.hexdigest(time)
+  session[:csrf] = @key
 end
 
 get '/' do
@@ -62,7 +71,7 @@ end
 
 get '/blog/:title' do
   title = Sanitize.clean(params[:title])
-  @contents = Content.first(:alias => 'blog/' + title)
+  @contents = Content.first(:alias => 'blog/' + title, :fields => [:title, :body])
   erb :blog_post
 end
 
@@ -76,4 +85,8 @@ end
 
 not_found do
   erb "<h1>404: Page not found</h1>"
+end
+
+error do
+  erb "<h1>500: oops</h1>"
 end
