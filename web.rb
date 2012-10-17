@@ -2,7 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'data_mapper'
 require 'digest/sha1'
-#require 'rack-flash'
+require 'rack-flash'
 require 'sinatra-authentication'
 require 'sanitize'
 
@@ -21,7 +21,7 @@ DataMapper.setup(:default, 'postgres://lbhhmtafaowdgx:tpjR5sVtWEswPaJ9tsQ7q-_cdj
 DataMapper.auto_upgrade!
 
 use Rack::Session::Cookie, :secret => 'superdupersecret'
-#use Rack::Flash
+use Rack::Flash
 
 configure do
     set :static, true
