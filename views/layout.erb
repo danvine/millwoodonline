@@ -64,8 +64,8 @@
     </div>
 
   <div class="container">
-    <% if Rack.const_defined?('Flash') %>
-      <div class="alert <% if flash[:error] %>alert-error<% else %>alert-success<%end>"><%= flash[:notice] %> <%= flash[:error] %></div>
+    <% if Rack.const_defined?('Flash') && (flash[:error] || flash[:notice]) %>
+      <div class="alert <% if flash[:error] %>alert-error<% else %>alert-success<% end %>"><%= flash[:notice] %> <%= flash[:error] %></div>
     <% end %>
     <%= yield %>
     <hr>
