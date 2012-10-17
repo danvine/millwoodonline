@@ -100,7 +100,7 @@ post '/contact' do
   
   Pony.mail(options)
   
-  flash[:notice] = "Thanks for your message."
+  flash[:notice] = "Thank you for your message."
   redirect '/contact'
 end
 
