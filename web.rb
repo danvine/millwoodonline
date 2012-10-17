@@ -36,6 +36,10 @@ helpers do
     ignore = ['a', 'an', 'as', 'at', 'before', 'but', 'by', 'for', 'from', 'is', 'in', 'into', 'like', 'of', 'off', 'on', 'onto', 'per', 'since', 'than', 'the', 'this', 'that', 'to', 'up', 'via', 'with']
     title.gsub('/[^a-zA-Z0-9\/]+/', '-')
   end
+  
+  def blockload
+    @block = erb :block, :layout => false
+  end
 end
 
 before do
@@ -54,6 +58,7 @@ before do
 end
 
 get '/' do
+  blockload
   erb :home
 end
 
@@ -72,7 +77,7 @@ end
 
 get '/blog/:title' do
   title = Sanitize.clean(params[:title])
-  @contents = Content.first(:alias => 'blog/' + title, :fields => [:title, :body])
+  @contents = Content.first(:alias => title, :fields => [:title, :body])
   erb :blog_post
 end
 

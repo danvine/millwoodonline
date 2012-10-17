@@ -64,10 +64,19 @@
     </div>
 
   <div class="container">
-    <% if Rack.const_defined?('Flash') && (flash[:error] || flash[:notice]) %>
-      <div class="alert <% if flash[:error] %>alert-error<% else %>alert-success<% end %>"><%= flash[:notice] %> <%= flash[:error] %></div>
-    <% end %>
-    <%= yield %>
+  <div class="row">
+      <div class="span8">
+       <% if Rack.const_defined?('Flash') && (flash[:error] || flash[:notice]) %>
+         <div class="alert <% if flash[:error] %>alert-error<% else %>alert-success<% end %>"><%= flash[:notice] %> <%= flash[:error] %></div>
+       <% end %>
+       <%= yield %>
+      </div>
+      <div class="span4">
+      <% if defined? @block %>
+      <%= @block %>
+      <% end %>
+      </div>
+    </div>
     <hr>
     <footer>
       <p>&copy; Millwood Online 2012</p>
