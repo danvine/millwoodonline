@@ -72,15 +72,17 @@ get '/work' do
 end
 
 get '/blog' do
+  page = 1
   if params[:page]
     page = Integer(params[:page])
     offset = 5*page-5
     @contents = Content.all(:order => [ :id.desc ], :limit => 5, :offset => offset)
-    size = @contents.size
+    
   else
     @contents = Content.all(:order => [ :id.desc ], :limit => 5)
   end
   
+  size = @contents.size
   pager_prev = "<li class='previous'><a href='/blog?page=#{page-1}'>&larr; Newer</a></li>" if page > 1
   pager_next = "<li class='next'><a href='/blog?page=#{page+1}'>Older &rarr;</a></li>" if size == 5
   @pager = "<ul class='pager'>#{pager_prev}#{pager_next}</ul>"
