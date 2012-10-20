@@ -1,8 +1,11 @@
-
+<h1>Blog</h1>
 <% @contents.each do |content| %>
 <div>
 <h2><a href="/blog/<%= content.alias %>"><%= content.title %></a></h2>
-<%= HTML_Truncator.truncate(content.body, 20) %>
+<% n=50 %>
+<%= Sanitize.clean(content.body.split(/\s+/, n+1)[0...n].join(' ')) %>
+... <a href="/blog/<%= content.alias %>">[read more]</a>
+<hr/>
 </div>
 <% end %>
-
+<%= @pager %>

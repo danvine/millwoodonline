@@ -1,5 +1,0 @@
-<ul>
-<% @contents.each do |content| %>
-<li><a href="/blog/<%= content.alias %>"><%= content.title %></a></li>
-<% end %>
-</ul>
