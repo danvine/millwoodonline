@@ -85,6 +85,5 @@
 
    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
    <script src="/js/bootstrap.min.js"></script>
-   <script src="/js/millwoodonline.js"></script>
   </body>
 </html>

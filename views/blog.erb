@@ -1,5 +1,8 @@
-<ul>
+
 <% @contents.each do |content| %>
-<li><a href="/blog/<%= content.alias %>"><%= content.title %></a></li>
+<div>
+<h2><a href="/blog/<%= content.alias %>"><%= content.title %></a></h2>
+<%= HTML_Truncator.truncate(content.body, 20) %>
+</div>
 <% end %>
-</ul>
+

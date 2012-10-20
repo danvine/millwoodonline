@@ -4,25 +4,17 @@
   <input type="hidden" name="csrf" value="<%= @key %>" />
     <div class="control-group">
       <label class="control-label" for='user_email'>Email</label>
-      <div class="controls">
       <input id='user_email' name='user[email]' size='30' type='text' />
-      </div>
     </div>
     <div class="control-group">
       <label class="control-label" for='user_password'>Password</label>
-      <div class="controls">
       <input id='user_password' name='user[password]' size='30' type='password' />
-      </div>
     </div>
     <div class="control-group">
       <label class="control-label" for='user_password_confirmation'>Confirm Password</label>
-      <div class="controls">
       <input id='user_password_confirmation' name='user[password_confirmation]' size='30' type='password' />
-      </div>
     </div>
     <div class="control-group">
-      <div class="controls">
       <button type='submit' class='btn btn-primary'>Sign up</button>
-      </div>
     </div>
   </form>

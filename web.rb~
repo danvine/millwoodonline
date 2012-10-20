@@ -6,7 +6,6 @@ require 'rack-flash'
 require 'sinatra-authentication'
 require 'sanitize'
 require 'pony'
-require "html_truncator"
 
 DataMapper.setup(:default, ENV['HEROKU_POSTGRESQL_SILVER_URL'])
       class Content
