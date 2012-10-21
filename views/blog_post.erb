@@ -1,4 +1,10 @@
 <h1><%= @contents.title %></h1>
+<div><i class="icon-time"></i><%= @contents.created.strftime("%d %B %Y") %></div>
+<div><i class="icon-tags"></i>
+  <% @contents.tags.split(', ').each do |tag| %>
+  <%= "<a href='/tag/#{tag.gsub(' ', '-')}'>#{tag}</a>" %>
+  <% end %>
+</div>
 <div><%= @contents.body %></div>
 <div id="disqus_thread"></div>
 <script type="text/javascript">

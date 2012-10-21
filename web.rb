@@ -6,6 +6,7 @@ require 'rack-flash'
 require 'sinatra-authentication'
 require 'sanitize'
 require 'pony'
+require 'builder'
 
 DataMapper.setup(:default, ENV['HEROKU_POSTGRESQL_SILVER_URL'])
       class Content
@@ -59,27 +60,27 @@ before do
   blockload
 end
 
-get '/' do
+get '/?' do
   erb :home
 end
 
-get '/about' do
-  erb :home
+get '/about/?' do
+  erb :about
 end
 
-get '/work' do
-  erb :home
+get '/work/?' do
+  erb :work
 end
 
-get '/blog' do
+get '/blog/?' do
   page = 1
   if params[:page]
     page = Integer(params[:page])
     offset = 5*page-5
-    @contents = Content.all(:order => [ :id.desc ], :limit => 5, :offset => offset)
+    @contents = Content.all(:type => 'blog', :order => [ :created.desc ], :limit => 5, :offset => offset)
     
   else
-    @contents = Content.all(:order => [ :id.desc ], :limit => 5)
+    @contents = Content.all(:type => 'blog', :order => [ :created.desc ], :limit => 5)
   end
   
   size = @contents.size
@@ -89,17 +90,36 @@ get '/blog' do
   erb :blog
 end
 
-get '/blog/:title' do
+get '/blog/:title/?' do
   title = Sanitize.clean(params[:title])
-  @contents = Content.first(:alias => title, :fields => [:title, :body])
+  @contents = Content.first(:type => 'blog', :alias => title, :fields => [:title, :body, :created, :tags])
   erb :blog_post
 end
 
-get '/contact' do
+get '/tag/:tag/?' do
+  page = 1
+  tag = "%#{Sanitize.clean(params[:tag].gsub('-', '%'))}%"
+  if params[:page]
+    page = Integer(params[:page])
+    offset = 5*page-5
+    @contents = Content.all(:type => 'blog', :tags.like => tag, :order => [ :created.desc ], :limit => 5, :offset => offset)
+    
+  else
+    @contents = Content.all(:type => 'blog', :tags.like => tag, :order => [ :created.desc ], :limit => 5)
+  end
+  
+  size = @contents.size
+  pager_prev = "<li class='previous'><a href='/tag/#{Sanitize.clean(params[:tag])}?page=#{page-1}'>&larr; Newer</a></li>" if page > 1
+  pager_next = "<li class='next'><a href='/tag/#{Sanitize.clean(params[:tag])}?page=#{page+1}'>Older &rarr;</a></li>" if size == 5
+  @pager = "<ul class='pager'>#{pager_prev}#{pager_next}</ul>"
+  erb :blog
+end
+
+get '/contact/?' do
   erb :contact
 end
 
-post '/contact' do
+post '/contact/?' do
   options = {
   :to => 'tim@millwoodonline.co.uk',
   :from => params[:email],
@@ -123,6 +143,32 @@ post '/contact' do
   redirect '/contact'
 end
 
+# Feeds
+get '/taxonomy/term/25/0/feed' do
+  tag = '%drupal%'
+  @contents = Content.all(:type => 'blog', :tags.like => tag, :order => [ :created.desc ])
+  
+  builder :rss
+end
+
+get '/rss.xml' do
+  @contents = Content.all(:type => 'blog', :order => [ :created.desc ])
+  
+  builder :rss
+end
+
+# Redirects
+get '/node/:nid/?' do
+  nid = Sanitize.clean(params[:nid])
+  contents = Content.first(:type => 'blog', :id => nid, :fields => [:alias])
+  redirect '/blog/' + contents.alias
+end
+
+get '/taxonomy/term/25' do
+  redirect '/tag/drupal'
+end
+
+# Errors
 not_found do
   erb "<h1>404: Page not found</h1>"
 end

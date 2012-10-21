@@ -17,6 +17,7 @@ GEM
   specs:
     addressable (2.2.8)
     bcrypt-ruby (3.0.1)
+    builder (3.0.0)
     daemons (1.1.9)
     data_mapper (1.2.0)
       dm-aggregates (~> 1.2.0)
@@ -110,6 +111,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  builder
   data_mapper
   dm-postgres-adapter
   haml
