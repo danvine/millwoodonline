@@ -93,6 +93,9 @@ end
 get '/blog/:title/?' do
   title = Sanitize.clean(params[:title])
   @contents = Content.first(:type => 'blog', :alias => title, :fields => [:title, :body, :created, :tags])
+  if @contents.nil?
+    halt 404
+  end
   erb :blog_post
 end
 
@@ -106,6 +109,10 @@ get '/tag/:tag/?' do
     
   else
     @contents = Content.all(:type => 'blog', :tags.like => tag, :order => [ :created.desc ], :limit => 5)
+  end
+  
+  if @contents.size == 0
+    halt 404
   end
   
   size = @contents.size
