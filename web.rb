@@ -45,7 +45,7 @@ end
 
 before do
   if ['www.millwoodonline.com', 'millwoodonline.com', 'millwoodonline.co.uk'].include? request.host
-    redirect "http://www.millwoodonline.co.uk" + request.url
+    redirect "http://www.millwoodonline.co.uk" + request.path
   end
 
   content_type 'text/html; charset=utf8'
