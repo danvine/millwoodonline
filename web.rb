@@ -44,7 +44,7 @@ helpers do
 end
 
 before do
-  if request.host == ("www.millwoodonline.com" || "millwoodonline.com" || "millwoodonline.co.uk")
+  if ['www.millwoodonline.com', 'millwoodonline.com', 'millwoodonline.co.uk'].include? request.host
     redirect "http://www.millwoodonline.co.uk" + request.url
   end
 
