@@ -45,7 +45,7 @@ end
 
 before do
   if ['www.millwoodonline.com', 'millwoodonline.com', 'millwoodonline.co.uk'].include? request.host
-    redirect "http://www.millwoodonline.co.uk" + request.path
+    redirect "http://www.millwoodonline.co.uk" + request.path, 301
   end
 
   content_type 'text/html; charset=utf8'
@@ -177,11 +177,11 @@ get '/node/:nid/?' do
   if contents.nil?
     halt 404
   end
-  redirect '/blog/' + contents.alias
+  redirect '/blog/' + contents.alias, 301
 end
 
 get '/taxonomy/term/25' do
-  redirect '/tag/drupal'
+  redirect '/tag/drupal', 301
 end
 
 # Errors
