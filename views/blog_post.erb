@@ -1,4 +1,10 @@
 <h1><%= @contents.title %></h1>
+
+<div class="pull-right">
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="timmillwood" data-url="<%= request.url %>" data-text="<%= @contents.title %>" data-size="large" data-count="vertical" data-related="timmillwood">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+
 <div><i class="icon-time"></i><%= @contents.created.strftime("%d %B %Y") %></div>
 <div><i class="icon-tags"></i>
   <% @contents.tags.split(', ').each do |tag| %>
@@ -6,6 +12,8 @@
   <% end %>
 </div>
 <div><%= @contents.body %></div>
+
+
 <div id="disqus_thread"></div>
 <script type="text/javascript">
 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
