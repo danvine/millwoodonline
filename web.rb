@@ -44,6 +44,10 @@ helpers do
 end
 
 before do
+  if request.host == ("www.millwoodonline.com" || "millwoodonline.com" || "millwoodonline.co.uk")
+    redirect "http://www.millwoodonline.co.uk" + request.url
+  end
+
   content_type 'text/html; charset=utf8'
   expires 300, :public
  

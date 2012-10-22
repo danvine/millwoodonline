@@ -9,4 +9,3 @@ gem 'sinatra-authentication', :git => 'git://github.com/timmillwood/sinatra-auth
 gem 'sanitize'
 gem 'pony'
 gem 'builder'
-gem 'rack-canonical-host'
