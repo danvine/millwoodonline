@@ -84,6 +84,9 @@ GEM
     pony (1.4)
       mail (> 2.0)
     rack (1.4.1)
+    rack-canonical-host (0.0.8)
+      addressable
+      rack (~> 1.0)
     rack-flash3 (1.0.1)
       rack
       rack
@@ -116,6 +119,7 @@ DEPENDENCIES
   dm-postgres-adapter
   haml
   pony
+  rack-canonical-host
   rack-flash3
   sanitize
   sinatra
