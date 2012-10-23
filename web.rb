@@ -130,7 +130,16 @@ end
 
 get '/admin/content/add' do
   @title = 'Add Content'
-  erb "<h1>Add content</h1>"
+  erb :addcontent
+end
+
+post '/admin/content/add' do
+  content_attributes = params[:content]
+  content_attributes['type'] = 'blog'
+  content_attributes['created'] = Time.now
+  content = Content.set(content_attribute)
+
+  redirect "/blog/#{content.alias}"
 end
 
 # Feeds

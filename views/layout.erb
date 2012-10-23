@@ -95,6 +95,7 @@
                 <ul class="dropdown-menu">
                   <% if current_user.admin? %>
                     <li><a href="/users">Users</a></li>
+                    <li><a href="/admin/content/add">Add content</a></li>
                   <% end %>
                   <li><a href="/logout">Logout</a></li>
                 </ul>
@@ -110,6 +111,9 @@
       <div class="span8">
        <% if Rack.const_defined?('Flash') && (flash[:error] || flash[:notice]) %>
          <div class="alert <% if flash[:error] %>alert-error<% else %>alert-success<% end %>"><%= flash[:notice] %> <%= flash[:error] %></div>
+       <% end %>
+       <% if defined? @title %>
+         <h1><%= @title %></h1>
        <% end %>
        <%= yield %> 
        <hr>
