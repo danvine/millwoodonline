@@ -8,20 +8,6 @@ require 'sanitize'
 require 'pony'
 require 'builder'
 
-DataMapper.setup(:default, ENV['HEROKU_POSTGRESQL_SILVER_URL'])
-      class Content
-        include DataMapper::Resource
-
-        property :id,       Serial
-        property :type,     String
-        property :title,    String, :length => 256
-        property :body,     Text
-        property :created,  DateTime
-        property :alias,    String, :length => 256
-        property :tags,     String, :length => 256
-      end
-DataMapper.auto_upgrade!
-
 use Rack::Session::Cookie, :secret => 'superdupersecret'
 use Rack::Flash
 
@@ -32,47 +18,26 @@ configure do
     set :sinatra_authentication_view_path, Pathname(__FILE__).dirname.expand_path + "views/"
 end
 
-helpers do
-  def pathgen(title)
-    ignore = ['a', 'an', 'as', 'at', 'before', 'but', 'by', 'for', 'from', 'is', 'in', 'into', 'like', 'of', 'off', 'on', 'onto', 'per', 'since', 'than', 'the', 'this', 'that', 'to', 'up', 'via', 'with']
-    title.gsub('/[^a-zA-Z0-9\/]+/', '-')
-  end
-  
-  def blockload
-    @block = erb :block, :layout => false
-  end
+configure :production do
+  require 'newrelic_rpm'
 end
 
-before do
-  if ['www.millwoodonline.com', 'millwoodonline.com', 'millwoodonline.co.uk'].include? request.host
-    redirect "http://www.millwoodonline.co.uk" + request.path, 301
-  end
-
-  content_type 'text/html; charset=utf8'
-  expires 300, :public
- 
-  if request.post?
-   if session[:csrf] != params[:csrf]
-     halt 503, erb('<h1>500: oops</h1>')
-   end
-  end 
-  
-  time = Time.now.to_s
-  @key = Digest::SHA1.hexdigest(time)
-  session[:csrf] = @key
-  
-  blockload
-end
+require_relative 'models'
+require_relative 'helpers'
+require_relative 'routes/before'
+require_relative 'routes/errors'
 
 get '/?' do
   erb :home
 end
 
 get '/about/?' do
+  @title = 'About'
   erb :about
 end
 
 get '/work/?' do
+  @title = 'Work'
   erb :work
 end
 
@@ -91,6 +56,7 @@ get '/blog/?' do
   pager_prev = "<li class='previous'><a href='/blog?page=#{page-1}'>&larr; Newer</a></li>" if page > 1
   pager_next = "<li class='next'><a href='/blog?page=#{page+1}'>Older &rarr;</a></li>" if size == 5
   @pager = "<ul class='pager'>#{pager_prev}#{pager_next}</ul>"
+  @title = 'Blog'
   erb :blog
 end
 
@@ -100,6 +66,7 @@ get '/blog/:title/?' do
   if @contents.nil?
     halt 404
   end
+  @title = @contents.title
   erb :blog_post
 end
 
@@ -123,10 +90,12 @@ get '/tag/:tag/?' do
   pager_prev = "<li class='previous'><a href='/tag/#{Sanitize.clean(params[:tag])}?page=#{page-1}'>&larr; Newer</a></li>" if page > 1
   pager_next = "<li class='next'><a href='/tag/#{Sanitize.clean(params[:tag])}?page=#{page+1}'>Older &rarr;</a></li>" if size == 5
   @pager = "<ul class='pager'>#{pager_prev}#{pager_next}</ul>"
+  @title = "#{Sanitize.clean(params[:tag].gsub('-', '%'))}"
   erb :blog
 end
 
 get '/contact/?' do
+  @title = 'Contact'
   erb :contact
 end
 
@@ -152,6 +121,16 @@ post '/contact/?' do
   
   flash[:notice] = "Thank you for your message."
   redirect '/contact'
+end
+
+# admin
+before '/admin/*' do
+  enforce_admin
+end
+
+get '/admin/content/add' do
+  @title = 'Add Content'
+  erb "<h1>Add content</h1>"
 end
 
 # Feeds
@@ -184,11 +163,3 @@ get '/taxonomy/term/25' do
   redirect '/tag/drupal', 301
 end
 
-# Errors
-not_found do
-  erb "<h1>404: Page not found</h1>"
-end
-
-error do
-  erb "<h1>500: oops</h1>"
-end

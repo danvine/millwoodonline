@@ -79,6 +79,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.3.6)
+    newrelic_rpm (3.5.0.1)
     nokogiri (1.5.5)
     polyglot (0.3.3)
     pony (1.4)
@@ -115,6 +116,7 @@ DEPENDENCIES
   data_mapper
   dm-postgres-adapter
   haml
+  newrelic_rpm
   pony
   rack-flash3
   sanitize
