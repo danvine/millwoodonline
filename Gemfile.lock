@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/timmillwood/sinatra-authentication.git
-  revision: 2885e70eced034a1138a319d0d328f792e63df45
+  remote: https://github.com/timmillwood/sinatra-authentication.git
+  revision: 354167e7d5fc74ede7bd0438f4f1506e59be966a
   specs:
     sinatra-authentication (0.4.2)
       dm-core
