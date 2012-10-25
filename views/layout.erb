@@ -47,7 +47,8 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
+
+<% if !current_user.admin? %>    
     <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -61,6 +62,7 @@
   })();
 
 </script>
+<% end %>
 
   </head>
 
