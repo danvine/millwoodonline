@@ -137,7 +137,7 @@ post '/admin/content/add' do
   content_attributes = params[:content]
   content_attributes['type'] = 'blog'
   content_attributes['created'] = Time.now
-  content = Content.set(content_attributes)
+  content = Content.create(content_attributes)
 
   redirect "/blog/#{content.alias}"
 end
