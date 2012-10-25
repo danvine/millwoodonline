@@ -8,7 +8,7 @@ before do
  
   if request.post?
    if session[:csrf] != params[:csrf]
-     halt 503, erb('<h1>500: oops</h1>')
+     halt 503, erb('<h1>500: oops</h1><p>Form Error</p>')
    end
   end 
   

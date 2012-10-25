@@ -3,7 +3,7 @@ not_found do
 end
 
 error 500 do
-  erb "<h1>500: oops</h1>"
+  erb "<h1>500: oops</h1>" + env['sinatra.error'].message
 end
 
 error 403 do
