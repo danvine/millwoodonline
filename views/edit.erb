@@ -1,11 +1,11 @@
-<div id='sinatra_authentication'>
+
   <h1>
     Edit
     account
   </h1>
   <% if @user.id == current_user.id %>
   <form action='/users/<%= @user.id %>/edit' method='post'>
-  <%= Rack::Csrf.csrf_tag(env) %>>
+  <%= Rack::Csrf.csrf_tag(env) %>
     <div class='field'>
       <div class='label'>
         <label for='user_email'>Email</label>
@@ -29,4 +29,4 @@
     </div>
   </form>
   <% end %>
-</div>
+
