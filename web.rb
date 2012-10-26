@@ -48,10 +48,10 @@ get '/blog/?' do
   if params[:page]
     page = Integer(params[:page])
     offset = 5*page-5
-    @contents = Content.all(:type => 'blog', :order => [ :created.desc ], :limit => 5, :offset => offset)
+    @contents = Content.all(:type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5, :offset => offset)
     
   else
-    @contents = Content.all(:type => 'blog', :order => [ :created.desc ], :limit => 5)
+    @contents = Content.all(:type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5)
   end
   
   size = @contents.size
@@ -59,16 +59,18 @@ get '/blog/?' do
   pager_next = "<li class='next'><a href='/blog?page=#{page+1}'>Older &rarr;</a></li>" if size == 5
   @pager = "<ul class='pager'>#{pager_prev}#{pager_next}</ul>"
   @title = 'Blog'
+  etag Digest::SHA1.hexdigest(@contents.first.body)
   erb :blog
 end
 
 get '/blog/:title/?' do
   title = Sanitize.clean(params[:title])
-  @contents = Content.first(:type => 'blog', :alias => title, :fields => [:title, :body, :created, :tags])
+  @contents = Content.first(:type => 'blog', :published => true, :alias => title, :fields => [:title, :body, :created, :tags])
   if @contents.nil?
     halt 404
   end
   @title = @contents.title
+  etag Digest::SHA1.hexdigest(@contents.body)
   erb :blog_post
 end
 
@@ -78,10 +80,10 @@ get '/tag/:tag/?' do
   if params[:page]
     page = Integer(params[:page])
     offset = 5*page-5
-    @contents = Content.all(:type => 'blog', :tags.like => tag, :order => [ :created.desc ], :limit => 5, :offset => offset)
+    @contents = Content.all(:type => 'blog', :published => true, :tags.like => tag, :order => [ :created.desc ], :limit => 5, :offset => offset)
     
   else
-    @contents = Content.all(:type => 'blog', :tags.like => tag, :order => [ :created.desc ], :limit => 5)
+    @contents = Content.all(:type => 'blog', :published => true, :tags.like => tag, :order => [ :created.desc ], :limit => 5)
   end
   
   if @contents.size == 0
@@ -93,6 +95,7 @@ get '/tag/:tag/?' do
   pager_next = "<li class='next'><a href='/tag/#{Sanitize.clean(params[:tag])}?page=#{page+1}'>Older &rarr;</a></li>" if size == 5
   @pager = "<ul class='pager'>#{pager_prev}#{pager_next}</ul>"
   @title = "#{Sanitize.clean(params[:tag].gsub('-', '%'))}"
+  etag Digest::SHA1.hexdigest(@contents.first.body)
   erb :blog
 end
 
@@ -148,14 +151,14 @@ end
 get '/taxonomy/term/25/0/feed' do
   content_type 'text/xml; charset=utf8'
   tag = '%drupal%'
-  @contents = Content.all(:type => 'blog', :tags.like => tag, :order => [ :created.desc ])
+  @contents = Content.all(:type => 'blog', :published => true, :tags.like => tag, :order => [ :created.desc ])
   
   builder :rss
 end
 
 get '/rss.xml' do
   content_type 'text/xml; charset=utf8'
-  @contents = Content.all(:type => 'blog', :order => [ :created.desc ])
+  @contents = Content.all(:type => 'blog', :published => true, :order => [ :created.desc ])
   
   builder :rss
 end
@@ -163,7 +166,7 @@ end
 # Redirects
 get '/node/:nid/?' do
   nid = Sanitize.clean(params[:nid])
-  contents = Content.first(:type => 'blog', :id => nid, :fields => [:alias])
+  contents = Content.first(:type => 'blog', :published => true, :id => nid, :fields => [:alias])
   if contents.nil?
     halt 404
   end

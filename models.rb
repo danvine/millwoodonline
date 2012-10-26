@@ -9,5 +9,6 @@ DataMapper.setup(:default, ENV['HEROKU_POSTGRESQL_SILVER_URL'])
         property :created,  DateTime
         property :alias,    String, :length => 256
         property :tags,     String, :length => 256
+        property :published, Boolean, :default  => false
       end
 DataMapper.auto_upgrade!
