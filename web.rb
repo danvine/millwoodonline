@@ -147,10 +147,14 @@ get '/admin/content/edit/:id/?' do
 end
 
 post '/admin/content/edit/:id/?' do
+  content_attributes = params[:content]
   id = Sanitize.clean(params[:id])
-  @contents = Content.first(:order => [ :created.desc ], :id => id)
-  @title = 'Content'
-  erb :addcontent
+  content = Content.first_or_create(:id => id).update(content_attributes)
+  if content.published?
+    redirect "/blog/#{content.alias}"
+  else
+    redirect "/admin/content"
+  end  
 end
 
 get '/admin/content/add/?' do
