@@ -88,6 +88,8 @@ GEM
     rack-flash3 (1.0.1)
       rack
       rack
+    rack_csrf (2.4.0)
+      rack (>= 0.9)
     rufus-tokyo (1.0.7)
     sanitize (2.0.3)
       nokogiri (>= 1.4.4, < 1.6)
@@ -119,6 +121,7 @@ DEPENDENCIES
   newrelic_rpm
   pony
   rack-flash3
+  rack_csrf
   sanitize
   sinatra
   sinatra-authentication!

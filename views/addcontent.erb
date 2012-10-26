@@ -1,5 +1,5 @@
 <form action='<%= request.path %>' method='post'>
-  <input type="hidden" name="csrf" value="<%= @key %>" />
+  <%= Rack::Csrf.csrf_tag(env) %>
   
   <label for='content_title'>Title</label>
   <input id='content_title' name='content[title]' size='30' type='text' class='span8' />

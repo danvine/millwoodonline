@@ -7,9 +7,11 @@ require 'sinatra-authentication'
 require 'sanitize'
 require 'pony'
 require 'builder'
+require 'rack/csrf'
 
 use Rack::Session::Cookie, :secret => 'superdupersecret'
 use Rack::Flash
+use Rack::Csrf, :raise => true
 
 configure do
     set :static, true
