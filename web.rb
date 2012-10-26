@@ -133,22 +133,45 @@ before '/admin/*' do
   enforce_admin
 end
 
-get '/admin/content/add' do
+get '/admin/content/?' do
+  @contents = Content.all(:order => [ :created.desc ])
+  @title = 'Content'
+  erb :content
+end
+
+get '/admin/content/edit/:id/?' do
+  id = Sanitize.clean(params[:id])
+  @contents = Content.first(:order => [ :created.desc ], :id => id)
+  @title = 'Content'
+  erb :addcontent
+end
+
+post '/admin/content/edit/:id/?' do
+  id = Sanitize.clean(params[:id])
+  @contents = Content.first(:order => [ :created.desc ], :id => id)
+  @title = 'Content'
+  erb :addcontent
+end
+
+get '/admin/content/add/?' do
   @title = 'Add Content'
   erb :addcontent
 end
 
-post '/admin/content/add' do
+post '/admin/content/add/?' do
   content_attributes = params[:content]
   content_attributes['type'] = 'blog'
   content_attributes['created'] = Time.now
   content = Content.create(content_attributes)
-
-  redirect "/blog/#{content.alias}"
+  if content.published?
+    redirect "/blog/#{content.alias}"
+  else
+    redirect "/admin/content"
+  end  
 end
 
 # Feeds
-get '/taxonomy/term/25/0/feed' do
+get '/taxonomy/term/25/0/feed/?' do
   content_type 'text/xml; charset=utf8'
   tag = '%drupal%'
   @contents = Content.all(:type => 'blog', :published => true, :tags.like => tag, :order => [ :created.desc ])
@@ -173,7 +196,7 @@ get '/node/:nid/?' do
   redirect '/blog/' + contents.alias, 301
 end
 
-get '/taxonomy/term/25' do
+get '/taxonomy/term/25/?' do
   redirect '/tag/drupal', 301
 end
 

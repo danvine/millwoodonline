@@ -1,0 +1,24 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Title</td>
+      <td>Type</td>
+      <td>Published</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </thead>
+  <tbody>
+  <% @contents.each do |content| %>
+    <tr>
+      <td><%= content.id %></td>
+      <td><%= content.title %></td>
+      <td><%= content.type %></td>
+      <td><%= content.published %></td>
+      <td><a href="#" class="btn btn-mini">Edit</a></td>
+      <td><a href="#" class="btn btn-mini">Delete</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
