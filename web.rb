@@ -14,6 +14,7 @@ use Rack::Flash
 use Rack::Csrf, :raise => true
 
 configure do
+    set :template_engine, :erb
     set :sinatra_authentication_view_path, Pathname(__FILE__).dirname.expand_path + "views/"
 end
 
