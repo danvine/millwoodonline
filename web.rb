@@ -151,17 +151,10 @@ end
 
 post '/admin/content/edit/:id/?' do
   content_attributes = params[:content]
-  erb "#{content_attributes.to_s}"
-  
-  #if content_attributes['published'] == 1
-  #  content_attributes['published'] = true
-  #else
-  #  content_attributes['published'] = false
-  #end
-  #content_attributes['created'] = Time.now
-  #id = Sanitize.clean(params[:id])
-  #content = Content.first_or_create(:id => id).update(content_attributes)
-  #redirect "/admin/content/edit/#{id}"
+  content_attributes['created'] = Time.now
+  id = Sanitize.clean(params[:id])
+  content = Content.first_or_create(:id => id).update(content_attributes)
+  redirect "/admin/content/edit/#{id}"
 end
 
 get '/admin/content/add/?' do
