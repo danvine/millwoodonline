@@ -14,9 +14,6 @@ use Rack::Flash
 use Rack::Csrf, :raise => true
 
 configure do
-    set :static, true
-    set :public_folder, Proc.new { File.join(root, "public") }
-    set :template_engine, :erb
     set :sinatra_authentication_view_path, Pathname(__FILE__).dirname.expand_path + "views/"
 end
 
@@ -65,7 +62,11 @@ end
 
 get '/blog/:title/?' do
   title = Sanitize.clean(params[:title])
-  @contents = Content.first(:type => 'blog', :published => true, :alias => title, :fields => [:title, :body, :created, :tags])
+  if current_user.admin?
+    @contents = Content.first(:type => 'blog', :alias => title, :fields => [:title, :body, :created, :tags])
+  else
+    @contents = Content.first(:type => 'blog', :published => true, :alias => title, :fields => [:title, :body, :created, :tags])
+  end
   if @contents.nil?
     halt 404
   end
@@ -151,11 +152,7 @@ post '/admin/content/edit/:id/?' do
   content_attributes = params[:content]
   id = Sanitize.clean(params[:id])
   content = Content.first_or_create(:id => id).update(content_attributes)
-  if content.published?
-    redirect "/blog/#{content.alias}"
-  else
-    redirect "/admin/content"
-  end  
+  redirect "/admin/content/edit/#{id}"
 end
 
 get '/admin/content/add/?' do
