@@ -9,7 +9,7 @@ require 'pony'
 require 'builder'
 require 'rack/csrf'
 
-use Rack::Session::Cookie, :secret => 'superdupersecret'
+use Rack::Session::Cookie, :secret => ENV['SECRET']
 use Rack::Flash
 use Rack::Csrf, :raise => true
 
@@ -142,7 +142,8 @@ end
 get '/admin/content/edit/:id/?' do
   id = Sanitize.clean(params[:id])
   @contents = Content.first(:order => [ :created.desc ], :id => id)
-  @title = 'Content'
+  @title = "Edit '#{@contents.title}'"
+ 
   erb :addcontent
 end
 
