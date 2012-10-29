@@ -151,6 +151,7 @@ end
 
 post '/admin/content/edit/:id/?' do
   content_attributes = params[:content]
+  flash[:notice] = content_attributes.to_s
   if content_attributes['published'] == 1
     content_attributes['published'] = true
   else
