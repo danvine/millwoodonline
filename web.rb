@@ -183,14 +183,14 @@ get '/taxonomy/term/25/0/feed/?' do
   content_type 'text/xml; charset=utf8'
   tag = '%drupal%'
   @contents = Content.all(:type => 'blog', :published => true, :tags.like => tag, :order => [ :created.desc ])
-  
+  etag Digest::SHA1.hexdigest(@contents.first.body)
   builder :rss
 end
 
 get '/rss.xml' do
   content_type 'text/xml; charset=utf8'
   @contents = Content.all(:type => 'blog', :published => true, :order => [ :created.desc ])
-  
+  etag Digest::SHA1.hexdigest(@contents.first.body)
   builder :rss
 end
 
