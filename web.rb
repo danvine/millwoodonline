@@ -152,7 +152,11 @@ end
 post '/admin/content/edit/:id/?' do
   content_attributes = params[:content]
   id = Sanitize.clean(params[:id])
-  content = Content.first_or_create(:id => id).update(content_attributes)
+  content = Content.get(id)
+  content.body = content_attributes['body']
+  content.published = content_attributes['published']
+  content.created = Time.now
+  content.save
   redirect "/admin/content/edit/#{id}"
 end
 

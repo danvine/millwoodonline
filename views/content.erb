@@ -3,6 +3,7 @@
     <tr>
       <td>ID</td>
       <td>Title</td>
+      <td>Created</td>
       <td>Type</td>
       <td>Published</td>
       <td></td>
@@ -13,7 +14,8 @@
   <% @contents.each do |content| %>
     <tr>
       <td><%= content.id %></td>
-      <td><%= content.title %></td>
+      <td><a href="/blog/<%= content.alias %>"><%= content.title %></a></td>
+      <td><%= content.created %></td>
       <td><%= content.type %></td>
       <td><%= content.published %></td>
       <td><a href="/admin/content/edit/<%= content.id %>" class="btn btn-mini">Edit</a></td>

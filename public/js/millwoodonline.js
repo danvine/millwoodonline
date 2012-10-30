@@ -4,7 +4,7 @@ if ($('#tweets').length) {
     $.each(data, function(key, value) {
 	  if(key < 3) {
 		  console.log(value);
-        $('#tweets').append('<li><img src="' + value.user.profile_image_url + '" style="float: left; padding-right: 10px">' + value.text.linkify().atify().hashify() + '<hr></li>');
+        $('#tweets').append('<li class="media"><img src="' + value.user.profile_image_url + '" class="pull-left media-object"><div class="media-body">' + value.text.linkify().atify().hashify() + '</div></li>');
       }
     });
   });
