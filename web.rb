@@ -151,6 +151,7 @@ end
 
 post '/admin/content/edit/:id/?' do
   content_attributes = params[:content]
+  content_attributes['created'] = Time.now
   id = Sanitize.clean(params[:id])
   content = Content.get(id)
   content.body = content_attributes['body']
