@@ -3,7 +3,6 @@ if ($('#tweets').length) {
   $.getJSON('https://api.twitter.com/1/statuses/user_timeline.json?callback=?&exclude_replies=true&include_entities=true&include_rts=false&screen_name=timmillwood', function(data) {
     $.each(data, function(key, value) {
 	  if(key < 3) {
-		  console.log(value);
         $('#tweets').append('<li class="media"><img src="' + value.user.profile_image_url + '" class="pull-left media-object"><div class="media-body">' + value.text.linkify().atify().hashify() + '</div></li>');
       }
     });
