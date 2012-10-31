@@ -70,6 +70,10 @@ get '/blog/?' do
 end
 
 get '/blog/:title/?' do
+  html = is_cached
+  if html
+    return html
+  end
   title = Sanitize.clean(params[:title])
   if current_user.admin?
     @contents = Content.first(:type => 'blog', :alias => title, :fields => [:title, :body, :created, :tags])
@@ -80,8 +84,8 @@ get '/blog/:title/?' do
     halt 404
   end
   @title = @contents.title
-  etag Digest::SHA1.hexdigest(@contents.body)
-  erb :blog_post
+  html = erb :blog_post
+  set_cache(html)
 end
 
 get '/tag/:tag/?' do
