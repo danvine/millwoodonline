@@ -46,6 +46,10 @@ get '/work/?' do
 end
 
 get '/blog/?' do
+  html = is_cached
+  if html
+    return html
+  end
   page = 1
   if params[:page]
     page = Integer(params[:page])
@@ -61,8 +65,8 @@ get '/blog/?' do
   pager_next = "<li class='next'><a href='/blog?page=#{page+1}'>Older &rarr;</a></li>" if size == 5
   @pager = "<ul class='pager'>#{pager_prev}#{pager_next}</ul>"
   @title = 'Blog'
-  etag Digest::SHA1.hexdigest(@contents.first.body)
-  erb :blog
+  html = erb :blog
+  set_cache(html)
 end
 
 get '/blog/:title/?' do

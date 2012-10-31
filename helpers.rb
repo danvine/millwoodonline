@@ -32,10 +32,10 @@ helpers do
     tag = "url:#{request.url}"
     page = REDIS.get(tag)
     if page and !logged_in?
+      etag Digest::SHA1.hexdigest(page)
       ttl = REDIS.ttl(tag)
       response.header['redis-ttl'] = ttl.to_s
       response.header['redis'] = 'HIT'
-      etag Digest::SHA1.hexdigest(page)
       return page
     else
       return false
@@ -43,10 +43,10 @@ helpers do
   end
   
   def set_cache(page)
+    etag Digest::SHA1.hexdigest(page)
     tag = "url:#{request.url}"
     response.header['redis'] = 'MISS'
     REDIS.setex(tag, 3600, page) if !logged_in?
-    etag Digest::SHA1.hexdigest(page)
     return page
   end
 end
