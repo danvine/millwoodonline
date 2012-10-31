@@ -27,4 +27,26 @@ helpers do
   def cache_url(ttl=300,use_cache=true,&block)
     cache("url:#{request.url}",ttl,use_cache,block)
   end
+  
+  def is_cached
+    tag = "url:#{request.url}"
+    page = REDIS.get(tag)
+    if page and !logged_in?
+      ttl = REDIS.ttl(tag)
+      response.header['redis-ttl'] = ttl.to_s
+      response.header['redis'] = 'HIT'
+      etag Digest::SHA1.hexdigest(page)
+      return page
+    else
+      return false
+    end
+  end
+  
+  def set_cache(page)
+    tag = "url:#{request.url}"
+    response.header['redis'] = 'MISS'
+    REDIS.setex(tag, 3600, page) if !logged_in?
+    etag Digest::SHA1.hexdigest(page)
+    return page
+  end
 end

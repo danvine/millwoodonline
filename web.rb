@@ -185,17 +185,27 @@ end
 # Feeds
 get '/taxonomy/term/25/0/feed/?' do
   content_type 'text/xml; charset=utf8'
-  tag = '%drupal%'
-  @contents = Content.all(:type => 'blog', :published => true, :tags.like => tag, :order => [ :created.desc ])
-  etag Digest::SHA1.hexdigest(@contents.first.body)
-  cache_url(3600, true) {builder :rss}
+  page = is_cached
+  if page
+    return page
+  else
+    tag = '%drupal%'
+    @contents = Content.all(:type => 'blog', :published => true, :tags.like => tag, :order => [ :created.desc ])
+    page = builder :rss
+    set_cache(page)
+  end
 end
 
 get '/rss.xml' do
   content_type 'text/xml; charset=utf8'
-  @contents = Content.all(:type => 'blog', :published => true, :order => [ :created.desc ])
-  etag Digest::SHA1.hexdigest(@contents.first.body)
-  cache_url(3600, true) {builder :rss}
+  page = is_cached
+  if page
+    return page
+  else
+    @contents = Content.all(:type => 'blog', :published => true, :order => [ :created.desc ])
+    page = builder :rss
+    set_cache(page)
+  end
 end
 
 # Redirects
