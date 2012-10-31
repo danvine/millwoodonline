@@ -89,6 +89,10 @@ get '/blog/:title/?' do
 end
 
 get '/tag/:tag/?' do
+  html = is_cached
+  if html
+    return html
+  end
   page = 1
   tag = "%#{Sanitize.clean(params[:tag].gsub('-', '%'))}%"
   if params[:page]
@@ -109,8 +113,8 @@ get '/tag/:tag/?' do
   pager_next = "<li class='next'><a href='/tag/#{Sanitize.clean(params[:tag])}?page=#{page+1}'>Older &rarr;</a></li>" if size == 5
   @pager = "<ul class='pager'>#{pager_prev}#{pager_next}</ul>"
   @title = "#{Sanitize.clean(params[:tag].gsub('-', '%'))}"
-  etag Digest::SHA1.hexdigest(@contents.first.body)
-  erb :blog
+  html = erb :blog
+  set_cache(html)
 end
 
 get '/contact/?' do
