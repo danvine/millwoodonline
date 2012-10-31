@@ -8,6 +8,7 @@ require 'sanitize'
 require 'pony'
 require 'builder'
 require 'rack/csrf'
+require 'redis'
 
 use Rack::Session::Cookie, :secret => ENV['SECRET']
 use Rack::Flash
@@ -16,6 +17,9 @@ use Rack::Csrf, :raise => true
 configure do
     set :template_engine, :erb
     set :sinatra_authentication_view_path, Pathname(__FILE__).dirname.expand_path + "views/"
+    
+    uri = URI.parse(ENV["REDISTOGO_URL"])
+    REDIS = Redis.new(:host => uri.host, :port => uri.port, :password => uri.password)
 end
 
 configure :production do
@@ -28,17 +32,17 @@ require_relative 'routes/before'
 require_relative 'routes/errors'
 
 get '/?' do
-  erb :home
+  cache_url(3600, true) {erb :home}
 end
 
 get '/about/?' do
   @title = 'About'
-  erb :about
+  cache_url(3600, true) {erb :about}
 end
 
 get '/work/?' do
   @title = 'Work'
-  erb :work
+  cache_url(3600, true) {erb :work}
 end
 
 get '/blog/?' do
@@ -103,7 +107,7 @@ end
 
 get '/contact/?' do
   @title = 'Contact'
-  erb :contact
+  cache_url(3600, true) {erb :contact}
 end
 
 post '/contact/?' do
@@ -184,14 +188,14 @@ get '/taxonomy/term/25/0/feed/?' do
   tag = '%drupal%'
   @contents = Content.all(:type => 'blog', :published => true, :tags.like => tag, :order => [ :created.desc ])
   etag Digest::SHA1.hexdigest(@contents.first.body)
-  builder :rss
+  cache_url(3600, true) {builder :rss}
 end
 
 get '/rss.xml' do
   content_type 'text/xml; charset=utf8'
   @contents = Content.all(:type => 'blog', :published => true, :order => [ :created.desc ])
   etag Digest::SHA1.hexdigest(@contents.first.body)
-  builder :rss
+  cache_url(3600, true) {builder :rss}
 end
 
 # Redirects

@@ -90,6 +90,7 @@ GEM
       rack
     rack_csrf (2.4.0)
       rack (>= 0.9)
+    redis (2.2.2)
     rufus-tokyo (1.0.7)
     sanitize (2.0.3)
       nokogiri (>= 1.4.4, < 1.6)
@@ -122,6 +123,7 @@ DEPENDENCIES
   pony
   rack-flash3
   rack_csrf
+  redis
   sanitize
   sinatra
   sinatra-authentication!
