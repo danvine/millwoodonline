@@ -119,7 +119,7 @@ end
 
 get '/contact/?' do
   @title = 'Contact'
-  cache_url(3600, true) {erb :contact}
+  erb :contact
 end
 
 post '/contact/?' do
