@@ -1,5 +1,5 @@
 		<form class="form-horizontal" action="/contact" method="post">
-		<input type="hidden" name="csrf" value="<%= @key %>" />
+    <%= Rack::Csrf.csrf_tag(env) %>
 		<div class="control-group">
     <label class="control-label" for="name">Name</label>
     <div class="controls">
