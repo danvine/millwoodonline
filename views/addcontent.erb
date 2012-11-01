@@ -13,6 +13,11 @@
   <label for='content_alias'>Alias</label>
   <input id='content_alias' name='content[alias]' size='30' type='text' class='span8'  value="<%= @contents.alias if defined? @contents %>"/>
   
+  <label for='content_update_created' class='checkbox'>
+    <input type='checkbox' name='content[update_created]' value='true' checked="checked"> Update created date
+  </label>
+  
+  
   <label for='content_published' class='checkbox'>
     <input type='checkbox' name='content[published]' value='true'<%= ' checked="checked"' if(defined? @contents and @contents.published == true) %>> Publish
   </label>

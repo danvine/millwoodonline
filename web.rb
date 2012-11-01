@@ -170,9 +170,12 @@ post '/admin/content/edit/:id/?' do
   content_attributes['created'] = Time.now
   id = Sanitize.clean(params[:id])
   content = Content.get(id)
+  content.title = content_attributes['title']
+  content.tags = content_attributes['tags']
   content.body = content_attributes['body']
-  content.published = content_attributes['published']
-  content.created = Time.now
+  content.alias = content_attributes['alias']
+  content.published = content_attributes['published']? true : false
+  content.created = Time.now if content_attributes['update_created']
   content.save
   redirect "/admin/content/edit/#{id}"
 end
