@@ -54,10 +54,10 @@ get '/blog/?' do
   if params[:page]
     page = Integer(params[:page])
     offset = 5*page-5
-    @contents = Content.all(:type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5, :offset => offset)
+    @contents = Content.all(:fields => [:title, :body, :alias], :type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5, :offset => offset)
     
   else
-    @contents = Content.all(:type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5)
+    @contents = Content.all(:fields => [:title, :body, :alias], :type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5)
   end
   
   size = @contents.size
@@ -98,10 +98,10 @@ get '/tag/:tag/?' do
   if params[:page]
     page = Integer(params[:page])
     offset = 5*page-5
-    @contents = Content.all(:type => 'blog', :published => true, :tags.like => tag, :order => [ :created.desc ], :limit => 5, :offset => offset)
+    @contents = Content.all(:fields => [:title, :body, :alias], :type => 'blog', :published => true, :tags.like => tag, :order => [ :created.desc ], :limit => 5, :offset => offset)
     
   else
-    @contents = Content.all(:type => 'blog', :published => true, :tags.like => tag, :order => [ :created.desc ], :limit => 5)
+    @contents = Content.all(:fields => [:title, :body, :alias], :type => 'blog', :published => true, :tags.like => tag, :order => [ :created.desc ], :limit => 5)
   end
   
   if @contents.size == 0
@@ -203,12 +203,12 @@ get '/taxonomy/term/25/0/feed/?' do
   page = is_cached
   if page
     return page
-  else
-    tag = '%drupal%'
-    @contents = Content.all(:type => 'blog', :published => true, :tags.like => tag, :limit =>10, :order => [ :created.desc ])
-    page = builder :rss
-    set_cache(page)
   end
+  
+  tag = '%drupal%'
+  @contents = Content.all(:fields => [:title, :body, :created, :alias], :type => 'blog', :published => true, :tags.like => tag, :limit =>10, :order => [ :created.desc ])
+  page = builder :rss
+  set_cache(page)
 end
 
 get '/rss.xml' do
@@ -216,17 +216,17 @@ get '/rss.xml' do
   page = is_cached
   if page
     return page
-  else
-    @contents = Content.all(:type => 'blog', :published => true, :limit => 10, :order => [ :created.desc ])
-    page = builder :rss
-    set_cache(page)
   end
+  
+  @contents = Content.all(:fields => [:title, :body, :created, :alias], :type => 'blog', :published => true, :limit => 10, :order => [ :created.desc ])
+  page = builder :rss
+  set_cache(page)
 end
 
 # Redirects
 get '/node/:nid/?' do
   nid = Sanitize.clean(params[:nid])
-  contents = Content.first(:type => 'blog', :published => true, :id => nid, :fields => [:alias])
+  contents = Content.first(:fields => [:alias], :type => 'blog', :published => true, :id => nid, :fields => [:alias])
   if contents.nil?
     halt 404
   end
