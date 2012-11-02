@@ -37,8 +37,6 @@ helpers do
       response.header['redis-ttl'] = ttl.to_s
       response.header['redis'] = 'HIT'
       return page
-    else
-      return false
     end
   end
   

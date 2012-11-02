@@ -205,7 +205,7 @@ get '/taxonomy/term/25/0/feed/?' do
     return page
   else
     tag = '%drupal%'
-    @contents = Content.all(:type => 'blog', :published => true, :tags.like => tag, :order => [ :created.desc ])
+    @contents = Content.all(:type => 'blog', :published => true, :tags.like => tag, :limit =>10, :order => [ :created.desc ])
     page = builder :rss
     set_cache(page)
   end
@@ -217,7 +217,7 @@ get '/rss.xml' do
   if page
     return page
   else
-    @contents = Content.all(:type => 'blog', :published => true, :order => [ :created.desc ])
+    @contents = Content.all(:type => 'blog', :published => true, :limit => 10, :order => [ :created.desc ])
     page = builder :rss
     set_cache(page)
   end
