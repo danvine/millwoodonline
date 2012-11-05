@@ -1,6 +1,6 @@
 <div><i class="icon-time"></i> <%= @contents.created.strftime("%d %B %Y") %></div>
 <div><i class="icon-tags"></i>
-  <% @contents.tags.split(', ').each do |tag| %>
+  <% @contents.legacy_tags.split(', ').each do |tag| %>
   <%= "<a href='/tag/#{tag.gsub(' ', '-')}'>#{tag}</a>" %>
   <% end %>
 </div>

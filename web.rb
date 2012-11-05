@@ -76,9 +76,9 @@ get '/blog/:title/?' do
   end
   title = Sanitize.clean(params[:title])
   if current_user.admin?
-    @contents = Content.first(:type => 'blog', :alias => title, :fields => [:title, :body, :created, :tags])
+    @contents = Content.first(:type => 'blog', :alias => title, :fields => [:title, :body, :created, :legacy_tags])
   else
-    @contents = Content.first(:type => 'blog', :published => true, :alias => title, :fields => [:title, :body, :created, :tags])
+    @contents = Content.first(:type => 'blog', :published => true, :alias => title, :fields => [:title, :body, :created, :legacy_tags])
   end
   if @contents.nil?
     halt 404
@@ -98,10 +98,10 @@ get '/tag/:tag/?' do
   if params[:page]
     page = Integer(params[:page])
     offset = 5*page-5
-    @contents = Content.all(:fields => [:title, :body, :alias], :type => 'blog', :published => true, :tags.like => tag, :order => [ :created.desc ], :limit => 5, :offset => offset)
+    @contents = Content.all(:fields => [:title, :body, :alias], :type => 'blog', :published => true, :legacy_tags.like => tag, :order => [ :created.desc ], :limit => 5, :offset => offset)
     
   else
-    @contents = Content.all(:fields => [:title, :body, :alias], :type => 'blog', :published => true, :tags.like => tag, :order => [ :created.desc ], :limit => 5)
+    @contents = Content.all(:fields => [:title, :body, :alias], :type => 'blog', :published => true, :legacy_tags.like => tag, :order => [ :created.desc ], :limit => 5)
   end
   
   if @contents.size == 0
@@ -171,7 +171,7 @@ post '/admin/content/edit/:id/?' do
   id = Sanitize.clean(params[:id])
   content = Content.get(id)
   content.title = content_attributes['title']
-  content.tags = content_attributes['tags']
+  content.legacy_tags = content_attributes['legacy_tags']
   content.body = content_attributes['body']
   content.alias = content_attributes['alias']
   content.published = content_attributes['published']? true : false
@@ -206,7 +206,7 @@ get '/taxonomy/term/25/0/feed/?' do
   end
   
   tag = '%drupal%'
-  @contents = Content.all(:fields => [:title, :body, :created, :alias], :type => 'blog', :published => true, :tags.like => tag, :limit =>10, :order => [ :created.desc ])
+  @contents = Content.all(:fields => [:title, :body, :created, :alias], :type => 'blog', :published => true, :legacy_tags.like => tag, :limit =>10, :order => [ :created.desc ])
   page = builder :rss
   set_cache(page)
 end
@@ -226,7 +226,7 @@ end
 # Redirects
 get '/node/:nid/?' do
   nid = Sanitize.clean(params[:nid])
-  contents = Content.first(:fields => [:alias], :type => 'blog', :published => true, :id => nid, :fields => [:alias])
+  contents = Content.first(:fields => [:alias], :type => 'blog', :published => true, :id => nid)
   if contents.nil?
     halt 404
   end
