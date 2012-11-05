@@ -45,6 +45,10 @@ get '/work/?' do
   cache_url(3600, true) {erb :work}
 end
 
+get '/ads/?' do
+  erb '<script type="text/javascript" src="http://s3.buysellads.com/ac/adwidget.js?key=dacb401ce6426777b16e606114bf3b77" id="bsa_adwidget_js"></script><div id="bsa_adwidget"></div>'
+end
+
 get '/blog/?' do
   html = is_cached
   if html
@@ -112,7 +116,7 @@ get '/tag/:tag/?' do
   pager_prev = "<li class='previous'><a href='/tag/#{Sanitize.clean(params[:tag])}?page=#{page-1}'>&larr; Newer</a></li>" if page > 1
   pager_next = "<li class='next'><a href='/tag/#{Sanitize.clean(params[:tag])}?page=#{page+1}'>Older &rarr;</a></li>" if size == 5
   @pager = "<ul class='pager'>#{pager_prev}#{pager_next}</ul>"
-  @title = "#{Sanitize.clean(params[:tag].gsub('-', '%'))}"
+  @title = "#{Sanitize.clean(params[:tag]).gsub('-', ' ').capitalize}"
   html = erb :blog
   set_cache(html)
 end
