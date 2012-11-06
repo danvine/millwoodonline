@@ -180,6 +180,7 @@ post '/admin/content/edit/:id/?' do
     content.tags << tag_data
   end
   content.title = content_attributes['title']
+  content.type = 'blog'
   content.legacy_tags = content_attributes['tags']
   content.body = content_attributes['body']
   content.alias = content_attributes['alias']
@@ -196,10 +197,21 @@ end
 
 post '/admin/content/add/?' do
   content_attributes = params[:content]
-  content_attributes['type'] = 'blog'
-  content_attributes['created'] = Time.now
-  content = Content.create(content_attributes)
-  if content.published?
+  content = Content.create
+  content_attributes['tags'].split(',').each do |tag|
+    tag_data = Tag.first_or_create(:tag => tag.lstrip.rstrip)
+    content.tags << tag_data
+  end
+  content.title = content_attributes['title']
+  content.type = 'blog'
+  content.legacy_tags = content_attributes['tags']
+  content.body = content_attributes['body']
+  content.alias = content_attributes['alias']
+  content.published = content_attributes['published']? true : false
+  content.created = Time.now if content_attributes['update_created']
+  content.save
+
+  if content_attributes['published']
     redirect "/blog/#{content.alias}"
   else
     redirect "/admin/content"
