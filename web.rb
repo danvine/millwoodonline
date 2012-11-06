@@ -80,13 +80,14 @@ get '/blog/:title/?' do
   end
   title = Sanitize.clean(params[:title])
   if current_user.admin?
-    @contents = Content.first(:type => 'blog', :alias => title, :fields => [:title, :body, :created, :legacy_tags])
+    @contents = Content.first(:type => 'blog', :alias => title)
   else
-    @contents = Content.first(:type => 'blog', :published => true, :alias => title, :fields => [:title, :body, :created, :legacy_tags])
+    @contents = Content.first(:type => 'blog', :published => true, :alias => title)
   end
   if @contents.nil?
     halt 404
   end
+
   @title = @contents.title
   html = erb :blog_post
   set_cache(html)
@@ -98,15 +99,15 @@ get '/tag/:tag/?' do
     return html
   end
   page = 1
-  tag = "%#{Sanitize.clean(params[:tag].gsub('-', '%'))}%"
+  tag = Sanitize.clean(params[:tag].gsub('-', ' '))
   if params[:page]
     page = Integer(params[:page])
     offset = 5*page-5
-    @contents = Content.all(:fields => [:title, :body, :alias], :type => 'blog', :published => true, :legacy_tags.like => tag, :order => [ :created.desc ], :limit => 5, :offset => offset)
+    @contents = Content.all(:type => 'blog', :published => true, :content_tags => {:tag_id => Tag.first(:tag => tag).id}, :order => [ :created.desc ], :limit => 5, :offset => offset)
     
   else
-    @contents = Content.all(:fields => [:title, :body, :alias], :type => 'blog', :published => true, :legacy_tags.like => tag, :order => [ :created.desc ], :limit => 5)
-  end
+    @contents = Content.all(:type => 'blog', :published => true, :content_tags => {:tag_id => Tag.first(:tag => tag).id}, :order => [ :created.desc ], :limit => 5)
+   end
   
   if @contents.size == 0
     halt 404
@@ -174,8 +175,12 @@ post '/admin/content/edit/:id/?' do
   content_attributes['created'] = Time.now
   id = Sanitize.clean(params[:id])
   content = Content.get(id)
+  content_attributes['tags'].split(',').each do |tag|
+    tag_data = Tag.first_or_create(:tag => tag.lstrip.rstrip)
+    content.tags << tag_data
+  end
   content.title = content_attributes['title']
-  content.legacy_tags = content_attributes['legacy_tags']
+  content.legacy_tags = content_attributes['tags']
   content.body = content_attributes['body']
   content.alias = content_attributes['alias']
   content.published = content_attributes['published']? true : false
@@ -209,8 +214,7 @@ get '/taxonomy/term/25/0/feed/?' do
     return page
   end
   
-  tag = '%drupal%'
-  @contents = Content.all(:fields => [:title, :body, :created, :alias], :type => 'blog', :published => true, :legacy_tags.like => tag, :limit =>10, :order => [ :created.desc ])
+  @contents = Content.all(:type => 'blog', :published => true, :content_tags => {:tag_id => Tag.first(:tag => 'drupal').id}, :order => [ :created.desc ], :limit => 10)
   page = builder :rss
   set_cache(page)
 end

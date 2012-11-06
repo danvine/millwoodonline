@@ -5,7 +5,7 @@
   <input id='content_title' name='content[title]' size='30' type='text' class='span8' value="<%= @contents.title if defined? @contents %>"/>
   
   <label for='content_tags'>Tags</label>
-  <input id='content_tags' name='content[legacy_tags]' size='30' type='text' class='span8'  value="<%= @contents.legacy_tags if defined? @contents %>"/>
+  <input id='content_tags' name='content[tags]' size='30' type='text' class='span8'  value="<%= @contents.tags.map{|tag| tag.tag}.join(', ') if defined? @contents %>"/>
    
   <label for='content_body'>Body</label> 
   <textarea id='content_body' name='content[body]' cols="60" rows="15"class='span8'><%= @contents.body if defined? @contents %></textarea>
