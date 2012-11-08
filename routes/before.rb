@@ -1,5 +1,5 @@
 before do
-  if ['www.millwoodonline.com', 'millwoodonline.com', 'millwoodonline.co.uk'].include? request.host
+  if ['www.millwoodonline.com', 'millwoodonline.com', 'millwoodonline.co.uk', 'drippic.com', 'www.drippic.com'].include? request.host
     redirect "http://www.millwoodonline.co.uk" + request.path, 301
   end
 
