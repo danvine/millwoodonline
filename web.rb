@@ -253,6 +253,15 @@ get '/node/:nid/?' do
   redirect '/blog/' + contents.alias, 301
 end
 
+get '/:alias/?' do
+  url_alias = Sanitize.clean(params[:alias])
+  contents = Content.first(:fields => [:alias], :type => 'blog', :published => true, :alias => url_alias)
+  if contents.nil?
+    halt 404
+  end
+  redirect '/blog/' + contents.alias, 301
+end
+
 get '/taxonomy/term/25/?' do
   redirect '/tag/drupal', 301
 end
