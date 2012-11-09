@@ -1,5 +1,6 @@
 helpers do
   def blockload
+    @args = request.path.split('/').map {|x| x=="" ? "/" : x}
     @block = erb :block, :layout => false
   end
   
