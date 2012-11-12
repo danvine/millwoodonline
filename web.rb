@@ -151,6 +151,16 @@ post '/contact/?' do
   redirect '/contact'
 end
 
+get '/php-drupal-web-developer-cardiff-abergavenny-wales-uk' do
+  @head_title = "PHP / Drupal Web Developer based in Cardiff / Abergavenny, Wales, UK"
+  erb :php
+end
+
+get '/ruby-on-rails-sinatra-web-developer-cardiff-abergavenny-wales-uk' do
+  @head_title = "Ruby on Rails / Sinatra Web Developer based in Cardiff / Abergavenny, Wales, UK"
+  erb :ruby
+end
+
 # admin
 before '/admin/*' do
   enforce_admin

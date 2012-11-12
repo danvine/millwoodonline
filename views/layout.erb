@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <% if defined? @title %>
       <title><%= @title %> | Millwood Online</title>
+    <% elsif defined? @head_title %>
+      <title><%= @head_title %> | Millwood Online</title>
     <% else %>
       <title>Millwood Online</title>
     <% end %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The digital home of Tim Millwood">
+    <meta name="description" content="The digital home of Tim Millwood, a php / Drupal & Ruby-on-Rails / Sinatra Web Developer based in Cardiff / Abergavenny, Wales, UK">
     <meta name="author" content="Tim Millwood">
+    <META NAME="robots" CONTENT="index, follow">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="Millwood Online - Blog">
 
@@ -58,7 +61,6 @@
           <a class="brand" href="/">Millwood Online</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="/">Home</a></li>
               <li><a href="/about">About</a></li>
               <li><a href="/work">Work</a></li>
               <li><a href="/blog">Blog</a></li>
@@ -95,7 +97,7 @@
          <div class="alert <% if flash[:error] %>alert-error<% else %>alert-success<% end %>"><%= flash[:notice] %> <%= flash[:error] %></div>
        <% end %>
        <% if defined? @title %>
-         <h1><%= @title %></h1>
+         <h1 class="page-title"><%= @title %></h1>
        <% end %>
        <%= yield %> 
        <hr>
@@ -107,7 +109,7 @@
       </div>
     </div>
     <footer>
-      <p>&copy; Millwood Online 2012 - Built in <img src="/img/ruby.png" /> Ruby using <img src="/img/sinatra.png" /> Sinatra.</p>
+      <p>&copy; Millwood Online 2012 - Built in <img src="/img/ruby.png" alt="Ruby" /> Ruby using <img src="/img/sinatra.png" alt="Sinatra" /> Sinatra.</p>
       <a href="https://twitter.com/timmillwood" class="twitter-follow-button" data-show-count="true" data-size="small">Follow @timmillwood</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </footer>
@@ -116,16 +118,4 @@
    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.0/js/bootstrap.min.js"></script>
    <script src="/js/millwoodonline.js"></script>
-   <!-- BuySellAds Ad Code -->
-<script type="text/javascript">
-(function(){
-  var bsa = document.createElement('script');
-     bsa.type = 'text/javascript';
-     bsa.async = true;
-     bsa.src = 'http://s3.buysellads.com/ac/bsa.js';
-  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
-})();
-</script>
-<!-- End BuySellAds Ad Code -->
-  </body>
 </html>
