@@ -45,10 +45,6 @@ get '/work/?' do
   cache_url(3600, true) {erb :work}
 end
 
-get '/ads/?' do
-  erb '<script type="text/javascript" src="http://s3.buysellads.com/ac/adwidget.js?key=dacb401ce6426777b16e606114bf3b77" id="bsa_adwidget_js"></script><div id="bsa_adwidget"></div>'
-end
-
 get '/blog/?' do
   html = is_cached
   if html
@@ -100,13 +96,17 @@ get '/tag/:tag/?' do
   end
   page = 1
   tag = Sanitize.clean(params[:tag].gsub('-', ' '))
+  tag_id = Tag.first(:tag => tag)
+  if !tag_id
+    halt 404
+  end
   if params[:page]
     page = Integer(params[:page])
     offset = 5*page-5
-    @contents = Content.all(:type => 'blog', :published => true, :content_tags => {:tag_id => Tag.first(:tag => tag).id}, :order => [ :created.desc ], :limit => 5, :offset => offset)
+    @contents = Content.all(:type => 'blog', :published => true, :content_tags => {:tag_id => tag_id.id}, :order => [ :created.desc ], :limit => 5, :offset => offset)
     
   else
-    @contents = Content.all(:type => 'blog', :published => true, :content_tags => {:tag_id => Tag.first(:tag => tag).id}, :order => [ :created.desc ], :limit => 5)
+    @contents = Content.all(:type => 'blog', :published => true, :content_tags => {:tag_id => tag_id.id}, :order => [ :created.desc ], :limit => 5)
    end
   
   if @contents.size == 0
@@ -263,6 +263,14 @@ get '/node/:nid/?' do
   redirect '/blog/' + contents.alias, 301
 end
 
+get '/tags/*' do
+  redirect '/tag/' + params[:splat].first
+end
+
+get '/taxonomy/term/25/?' do
+  redirect '/tag/drupal', 301
+end
+
 get '/:alias/?' do
   url_alias = Sanitize.clean(params[:alias])
   contents = Content.first(:fields => [:alias], :type => 'blog', :published => true, :alias => url_alias)
@@ -271,8 +279,3 @@ get '/:alias/?' do
   end
   redirect '/blog/' + contents.alias, 301
 end
-
-get '/taxonomy/term/25/?' do
-  redirect '/tag/drupal', 301
-end
-
