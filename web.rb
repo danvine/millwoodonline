@@ -129,7 +129,7 @@ end
 
 get '/contact/?' do
   @title = 'Contact'
-  @description "Call 01873 878587 or email Tim Millwood."
+  @description = "Call 01873 878587 or email Tim Millwood."
   erb :contact
 end
 
