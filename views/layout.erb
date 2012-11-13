@@ -13,7 +13,7 @@
     <% if defined? @description %>
       <meta name="description" content="<%= @description %>">
     <% else %>
-     <meta name="description" content="The digital home of Tim Millwood, a php / Drupal & Ruby-on-Rails / Sinatra Web Developer based in Cardiff / Abergavenny, Wales, UK">
+     <meta name="description" content="The digital home of Tim Millwood, a PHP / Drupal & Ruby-on-Rails / Sinatra Web Developer based in Cardiff / Abergavenny, Wales, UK">
     <% end %>
     <link rel="author" href="https://plus.google.com/112785318169610930599">
     <meta name="author" content="Tim Millwood">
@@ -36,7 +36,7 @@
     <![endif]-->
 
 <% if !current_user.admin? %>    
-    <script type="text/javascript">
+  <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-3761412-1']);
@@ -47,7 +47,7 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
+  window.google_analytics_uacct = "UA-3761412-1"
 </script>
 <% end %>
 
