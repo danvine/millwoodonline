@@ -37,11 +37,13 @@ end
 
 get '/about/?' do
   @title = 'About'
+  @description = 'Tim Millwood is a web developer based in Cardiff / Abergavenny, Wales, UK working on Drupal, Ruby-on-Rails and Sinatra.'
   cache_url(3600, true) {erb :about}
 end
 
 get '/work/?' do
   @title = 'Work'
+  @description = 'Tim Millwood currently works at Acquia as a Client advisor. He is also taking on Drupal, Ruby-on-Rals and Sinatra freelance web development projects.'
   cache_url(3600, true) {erb :work}
 end
 
@@ -65,6 +67,7 @@ get '/blog/?' do
   pager_next = "<li class='next'><a href='/blog?page=#{page+1}'>Older &rarr;</a></li>" if size == 5
   @pager = "<ul class='pager'>#{pager_prev}#{pager_next}</ul>"
   @title = 'Blog'
+  @description = 'Millwood Online Blog features many articles on Drupal, Ruby-on-Rails, Sinatra and related Web Development topics.'
   html = erb :blog
   set_cache(html)
 end
@@ -85,6 +88,7 @@ get '/blog/:title/?' do
   end
 
   @title = @contents.title
+  @description = "A blog post about #{@contents.tags.map{|tag| tag.tag}.join(', ')} posted on #{@contents.created.strftime("%d %B %Y")} by Tim Millwood"
   html = erb :blog_post
   set_cache(html)
 end
@@ -118,12 +122,14 @@ get '/tag/:tag/?' do
   pager_next = "<li class='next'><a href='/tag/#{Sanitize.clean(params[:tag])}?page=#{page+1}'>Older &rarr;</a></li>" if size == 5
   @pager = "<ul class='pager'>#{pager_prev}#{pager_next}</ul>"
   @title = "#{Sanitize.clean(params[:tag]).gsub('-', ' ').capitalize}"
+  @description = "Blog posts relating to #{Sanitize.clean(params[:tag]).gsub('-', ' ').capitalize}."
   html = erb :blog
   set_cache(html)
 end
 
 get '/contact/?' do
   @title = 'Contact'
+  @description "Call 01873 878587 or email Tim Millwood."
   erb :contact
 end
 
@@ -153,11 +159,13 @@ end
 
 get '/php-drupal-web-developer-cardiff-abergavenny-wales-uk' do
   @head_title = "PHP / Drupal Web Developer based in Cardiff / Abergavenny, Wales, UK"
+  @description = "Tim Millwood is a PHP and Drupal developer working in Cardiff / Abergavenny, Wales, UK."
   erb :php
 end
 
 get '/ruby-on-rails-sinatra-web-developer-cardiff-abergavenny-wales-uk' do
   @head_title = "Ruby on Rails / Sinatra Web Developer based in Cardiff / Abergavenny, Wales, UK"
+  @description = "Tim Millwood is a Ruby-on-Rails and Sinatra developer working in Cardiff / Abergavenny, Wales, UK."
   erb :ruby
 end
 

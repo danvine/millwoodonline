@@ -7,10 +7,15 @@
     <% elsif defined? @head_title %>
       <title><%= @head_title %> | Millwood Online</title>
     <% else %>
-      <title>Millwood Online</title>
+      <title>Millwood Online | Web Development</title>
     <% end %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The digital home of Tim Millwood, a php / Drupal & Ruby-on-Rails / Sinatra Web Developer based in Cardiff / Abergavenny, Wales, UK">
+    <% if defined? @description %>
+      <meta name="description" content="<%= @description %>">
+    <% else %>
+     <meta name="description" content="The digital home of Tim Millwood, a php / Drupal & Ruby-on-Rails / Sinatra Web Developer based in Cardiff / Abergavenny, Wales, UK">
+    <% end %>
+    <link rel="author" href="https://plus.google.com/112785318169610930599">
     <meta name="author" content="Tim Millwood">
     <META NAME="robots" CONTENT="index, follow">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
@@ -48,7 +53,7 @@
 
   </head>
 
-  <body>
+  <body itemscope itemtype="http://schema.org/WebPage">
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -97,7 +102,7 @@
          <div class="alert <% if flash[:error] %>alert-error<% else %>alert-success<% end %>"><%= flash[:notice] %> <%= flash[:error] %></div>
        <% end %>
        <% if defined? @title %>
-         <h1 class="page-title"><%= @title %></h1>
+         <h1 class="page-header"><%= @title %></h1>
        <% end %>
        <%= yield %> 
        <hr>
@@ -108,12 +113,17 @@
       <% end %>
       </div>
     </div>
-    <footer>
-      <p>&copy; Millwood Online 2012 - Built in <img src="/img/ruby.png" alt="Ruby" /> Ruby using <img src="/img/sinatra.png" alt="Sinatra" /> Sinatra.</p>
-      <a href="https://twitter.com/timmillwood" class="twitter-follow-button" data-show-count="true" data-size="small">Follow @timmillwood</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    </footer>
   </div>
+
+  <footer class="footer">
+    <div class="container">
+      <a href="https://twitter.com/timmillwood" class="twitter-follow-button" data-show-count="true" data-size="small">Follow @timmillwood</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+      <p><small>&copy; Millwood Online 2012 - Built in <img src="/img/ruby.png" alt="Ruby" /> Ruby using <img src="/img/sinatra.png" alt="Sinatra" /> Sinatra.<br/>
+      Cardiff / Abergavenny, Wales UK - Call <a href="tel:+441873878587">01873 878587</a> or <a href="/contact">email</a>.</small></p>
+    </div>  
+  </footer>
 
    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.0/js/bootstrap.min.js"></script>

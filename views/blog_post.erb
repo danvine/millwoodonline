@@ -1,4 +1,6 @@
-<div><i class="icon-time"></i> <%= @contents.created.strftime("%d %B %Y") %></div>
+<div itemscope itemtype="http://schema.org/Blog">
+<div><i class="icon-user"></i> <a itemprop="author" href="/about">Tim Millwood</a></div>
+<div><meta itemprop="datePublished" content="<%= @contents.created.strftime("%Y-%m-%d") %>"><i class="icon-time"></i> <%= @contents.created.strftime("%d %B %Y") %></div>
 <div><i class="icon-tags"></i>
   <% @contents.tags.each do |tag| %>
   <%= "<a href='/tag/#{tag.tag.gsub(' ', '-')}'>#{tag.tag}</a>" %>
@@ -30,7 +32,31 @@
 </div>
 
 
-<div><%= @contents.body %></div>
+<div>
+<%= @contents.body %>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-5784721204423585";
+/* Millwood Online Blog */
+google_ad_slot = "4049202421";
+google_ad_width = 234;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-5784721204423585";
+/* Millwood Online Blog */
+google_ad_slot = "4049202421";
+google_ad_width = 234;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
 
 
 <div id="disqus_thread"></div>
@@ -47,3 +73,4 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
