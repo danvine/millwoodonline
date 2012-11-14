@@ -249,7 +249,7 @@ get '/taxonomy/term/25/0/feed/?' do
   set_cache(page)
 end
 
-get '/atom.xml' do
+get '/rss.xml' do
   content_type 'text/xml; charset=utf8'
   page = is_cached
   if page
@@ -277,10 +277,6 @@ end
 
 get '/taxonomy/term/25/?' do
   redirect '/tag/drupal', 301
-end
-
-get '/rss.xml/?' do
-  redirect '/atom.xml', 301
 end
 
 get '/:alias/?' do
