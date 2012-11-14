@@ -1,2449 +1,509 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-<url>
-  <loc>http://www.millwoodonline.co.uk/</loc>
-  <changefreq>daily</changefreq>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/about</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/work</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/contact</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/login</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/php-drupal-web-developer-cardiff-abergavenny-wales-uk</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/ruby-on-rails-sinatra-web-developer-cardiff-abergavenny-wales-uk</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/heroku-mobile-monitoring-maintaining-apps-on-the-go</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/sinatra-authentication-datamapper-rack-flash-other-great-things</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/getting-started-with-sinatra</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/why-sinatra-not-drupal</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/getting-more-open-social-web</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=2</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/signup</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/Ruby</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/Heroku</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/Sinatra</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/tutorial</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/open</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/OStatus</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/Twitter</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/App.net</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/Tent</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/facebook</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/social</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/Microblogging</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/find-and-replace-paths-within-code-files</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/remove-all-svns</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/drupal-cron-failing-not-sure-why-heres-handy-drush-command</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/managing-files-when-moving-multi-site-drupal-6</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/what-your-drupal-workflow</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=1</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=3</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/blog-comments-20</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal-6</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/files</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/filepaths</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/code</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/command</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/svn</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal-7</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drush</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/cron</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/acquia</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/managed-cloud</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/devdesktop.</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/my-views-drupal-statistics-module</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/net-magazine-awards</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/build-job-listing-website</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=4</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/blog</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/comments</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/disqus</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/twitter</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal?page=2</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/so-lets-start-drupal-8</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/sale-drippic</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal-6?page=2</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/perfect-drupal-development-environment</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal-7?page=2</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/ignite-cardiff-drupal-talk</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal-8</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/statistics</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/.net-magazine</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/article</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/my-thoughts-drupal-app-store</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/drupalcon-coming-london-wanna-help</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/twitter-css-hack</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=5</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/my-new-blog</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/blog-it-alpha-launch</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/blog-it-whats-next</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/blog-it-development</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/blog?page=2</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/i-am-now-disqus-ing</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/drupal-iphone-webos-and-drippic</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/simple-twitter-anywhere-drupal-integration</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/drippic-twitpic-clone-built-drupal</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/twitter?page=2</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal?page=1</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal?page=3</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drippic</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/varnish</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/memcache</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/sale</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/media-queries-drupal</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/are-you-looking-freelancer</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/mark-boulton-design-studio-site-now-using-drupal</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal-6?page=1</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal-6?page=3</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/cvs</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/development</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/environment</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/perfect</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/me-drupal-7-and-its-competition</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/views-module-drupal-core</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal-7?page=1</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/cardiff</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/ignite</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/ignitecardiff</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupalappstore</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupalcon</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/london</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/2011</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal-association</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/fairfield</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/august</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/css</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/hack</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/rainbow</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/rainbowtwitter</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/rainbowtwtr</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/chrisred</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/mb006</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/hacker</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/hacking</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/digital</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/red</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/net-awards</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=6</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/vps.net</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/vps</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/html5</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/mess</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/blog-to-it</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/alpha</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/blogs</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/blog-it-what-it</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/why-i-am-using-skribit</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/blogupp-blog-promotion</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/lack-posts-easter</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/blog?page=1</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/iphone</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/webos</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/tweetie</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/anywhere</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/twitpic</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/can-twitter-style-site-be-made-drupal</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/twitter-api</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/twitter?page=1</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal?page=4</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal-6-themes</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/theming</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/media-queries</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/design</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/work</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/jquery</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal-5</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/php</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/freelance</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/mark-boulton-design</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/multi-site-drupal-installations</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/drupal-book-update</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/review-drupal-6-javascript-and-jquery-matt-butcher</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/review-drupal-6-themes-ric-shreves</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/streamline-drupal-cvs-checkout</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal-6?page=4</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/weekend-full-drupal</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/joomla</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/wordpress</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/views</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/drupal-association-election-application</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/drupalcon-uk-2011-proposal</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/drupalcamp-uk-my-sessions</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/getting-ready-drupalcon</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/hard-rock-calling-2008</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/netmag</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/awards</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/cloud-part-2-cloud-hosting</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=7</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/vpsnet-turnkey-linux-drupal</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/xv-xserve-virtual-mac-os-x-leopard-vps-server-media-temple</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/blog-it-update-redesign-and-swekey</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/blog-it-and-birthdays</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/nominate-blog-it-open-web-award-last-chance</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/blog-to-it?page=2</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/drupalmuorg-will-it-be-next-wordpressmu</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/skribit</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/advertising</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/blogupp!</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/promotion</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/easter</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/2008-was-great-year-what-will-2009-bring</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/touchterm-iphone-app-i-have-been-waiting</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/preview-new-lastfm-app-iphone</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/how-not-jailbreak-your-apple-iphone</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/iphone?page=2</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/microblogging</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/api</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal?page=5</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/lack-blogging-new-job-and-drupal-book</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/drupal-5-or-drupal-6</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/manipulating-pdfs-php</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/how-to</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/pdmd</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/wiley</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/wrox</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/ajax</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/javascript</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/book</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/review</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/packt</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/packt-publishing</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/ric-shreves</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/themes</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/bash</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/awesome-drupal-theme</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/contact-profile-module-can-you-think-better-name</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal-6?page=5</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/theme</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/module</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/referrer</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/ubercart</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupalconuk</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/election</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupalcamp</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupalcampuk</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/manchester</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/uk</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/washington-dc</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/2008</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/eric-clapton</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/hard-rock-calling</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/hyde-park</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/jason-mraz</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/john-mayer</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/robert-randolph</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/sheryl-crow</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/cloud</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/cloud-computing</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/cloud-services</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/cloud-hosting</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/how-setup-server-and-install-drupal</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/what-drupal</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/creating-simple-adobe-air-app</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=8</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/linux</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/turnkey</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/server</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/apple</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/(xv)</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/leopard</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/mac-os-x</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/media-temple</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/redesign</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/swekey</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/birthday</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/open-web-awards</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/nominate</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/blog-to-it?page=1</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/mu</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/home</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/lullabot</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/maderia</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/toronto</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/wedding</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/app-store</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/touchterm</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/last.fm</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/kevin-rose</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/video</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/jailbreak</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/pwnagetool</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/iphone-20-and-app-store</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/italy-getting-unlocked-3g-iphone-soon</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/iphone-will-be-3g-60-days-says-walt-mossberg</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/iphone-20</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/iphone?page=1</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/iphone?page=3</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal?page=6</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/job</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/mbd</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/manipulation</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/pdf</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/how-setup-web-server-using-ubuntu-server</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/how-get-loads-website-visitors</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/review-vmware-fusion-2-beta</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/contact-profile</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/drupal-themeing-part-2-update</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/drupal-themeimg-using-raincitys-basic-theme</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/new-look-millwood-online</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/george-sampson-wins-britains-got-talent-2008</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/sunday-times-rich-list-2008</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/rackspace-big-news-cloud-hosing</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/debian</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/install</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/setup</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/introduction</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/adobe</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/air</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/html</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/xml</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=9</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/fedora-10-macbook-pro</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/mini-itx-server-project-part-2</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/mini-itx-server-project</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/millwood-online-has-moved-yet-again</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/server?page=2</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/apple?page=2</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/i-have-moved</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/mashable-open-web-awards-voting</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/lullabot-drupal-training-toronto</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/toronto-canada</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/getting-back-normal</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/my-wedding-24-hour-countdown</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/marquee-celtic-manor</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/3g</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/italy</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/wall-street-journal</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/walt-mossberg</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/2.0</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/sdk</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/iphone-sdk</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal?page=7</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/ubuntu</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/visitors</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/website</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/beta</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/fusion-2</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/vmware</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/update</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/basic</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/raincity</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/millwood-online</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/andrew-jonston</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/george-sampson</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/itv</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/signature</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/rich-list</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/the-sunday-times</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/hosting</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/jungle-disk</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/mosso</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/rackspace</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/slicehost</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=10</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.11</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/fedora</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/kubuntu</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/macbook-pro</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/redhat</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/project</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/moved</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/spun-designs</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/server?page=1</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/bulging-apple-macbook-pro-battery</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/apple?page=1</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/apple?page=3</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/(gs)</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/(mt)</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/problems</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/mashable</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/canada</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/training</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/honeymoon</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/celtic-manor</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal?page=8</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/windows-7-beta</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/time-upgrade-drupal-62</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/zattoo-freeview-over-broadband</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=11</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.09</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/17</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.07</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/battery</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.07</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/bulge</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.07</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/c2d</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.07</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal?page=9</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.07</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/microsoft</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.07</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/vista</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.07</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/windows</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.07</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/windows-7</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.07</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/6.2</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.07</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/bbc</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.07</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/freeview</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.07</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/tv</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.07</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/zattoo</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.07</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/translations-drupal</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.07</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=12</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.07</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal?page=10</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.05</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/live-diggnation-microsoft-silverlight</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.05</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/pioneer-ending-plasma-production-or-are-they</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.05</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/g18n</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.05</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/i18n</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.05</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/l10n</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.05</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/translations</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.05</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/us-presidential-race</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.05</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=13</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.05</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/why-i-use-drupal</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal?page=11</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/diggnation</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/digg</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/live</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/silverlight</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/display</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/kuro</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/pioneer</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/plasma</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/mccain</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/obama</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/presidential</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/us</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/usa</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=14</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/why</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/imagecache-and-lighttpd</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/drupal-too-general</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal?page=12</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/behind-scenes-diggnation-amsterdam</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/asus-eee-pc-900-update</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=15</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.04</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/imagecache</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.03</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/lighttpd</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.03</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/general</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.03</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/naked-wales-article-drupal</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.03</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal?page=13</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.03</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/amsterdam</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.03</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/asus</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.03</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/computer</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.03</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/eee-pc</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.03</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/laptop</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.03</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/change-web-browsers</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.03</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=16</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.03</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/naked-wales</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/writing-about-drupal-naked-wales-magazine-2</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/lightbox-makes-way-thickbox</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/flickr-vs-drupal</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/drupal?page=14</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/asus-eee-pc-900</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/chrome</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/firefox</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/google</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/mozilla</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/safari</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/web-browser</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/webkit</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/my-wordle</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/lack-internet</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=17</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/magazine</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/writing</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/img-package</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/lightbox</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/thickbox</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/flickr</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/photos</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/test</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/img-package-module-drupal</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/first-drupal-post</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/tags</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/wordle</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/adsl24</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/internet</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/o2</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=18</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.02</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/modules</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.01</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/voixio-free-phone-calls-over-internet</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.01</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=19</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.01</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/free</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.01</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/phone</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.01</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/voip</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.01</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/voixio</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.01</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/firefox-3-record-breaker</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.01</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=20</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.01</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/firefox-3</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.01</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/guinness-world-records</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.01</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=21</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.01</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=22</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.01</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/pownce-carrier-spam</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.01</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/mercedes-benz-clc-class</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.01</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=23</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.01</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/pownce</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.00</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/spam</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.00</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=24</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.00</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/sunday-gardening</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.00</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/viewdles-face-recognition-system</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.00</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=25</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.00</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/gardening</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.00</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/jungle</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.00</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/sunday</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.00</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/weeds</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.00</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/face-recognition</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.00</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/viewdle</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.00</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog?page=26</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.00</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/blog/lineker-or-gandhi</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.00</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/gary-lineker</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.00</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/ghandhi</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.00</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/leicester</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.00</priority>
-</url>
-<url>
-  <loc>http://www.millwoodonline.co.uk/tag/statue</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.00</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url><loc>http://www.millwoodonline.co.uk/</loc><changefreq>always</changefreq><priority>1.00</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/about</loc><changefreq>always</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/work</loc><changefreq>always</changefreq><priority>1.00</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog</loc><changefreq>always</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/contact</loc><changefreq>always</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/php-drupal-web-developer-cardiff-abergavenny-wales-uk</loc><changefreq>always</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/ruby-on-rails-sinatra-web-developer-cardiff-abergavenny-wales-uk</loc><changefreq>always</changefreq><priority>1.00</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/heroku-mobile-monitoring-maintaining-apps-on-the-go</loc><changefreq>always</changefreq><priority>1.00</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/sinatra-authentication-datamapper-rack-flash-other-great-things</loc><changefreq>always</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/getting-started-with-sinatra</loc><changefreq>always</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/why-sinatra-not-drupal</loc><changefreq>always</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/getting-more-open-social-web</loc><changefreq>always</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=2</loc><changefreq>always</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/Ruby</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/Heroku</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/Ruby-on-Rails</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/Sinatra</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/tutorial</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/open</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/OStatus</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/Twitter</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/App.net</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/Tent</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/facebook</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/social</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/Microblogging</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/find-and-replace-paths-within-code-files</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/remove-all-svns</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/drupal-cron-failing-not-sure-why-heres-handy-drush-command</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/managing-files-when-moving-multi-site-drupal-6</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/what-your-drupal-workflow</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=1</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=3</loc><changefreq>always</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/blog-comments-20</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/are-we-putting-too-much-faith-the-cloud</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal-6</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/files</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/filepaths</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/code</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/command</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/svn</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal-7</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drush</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/cron</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/multi-site</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/acquia</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/managed-cloud</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/devdesktop.</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/my-views-drupal-statistics-module</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/net-magazine-awards</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/build-job-listing-website</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/leaving-boultons-joining-acquians</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=4</loc><changefreq>always</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/blog</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/comments</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/disqus</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/twitter</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/cloud</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/cloud-computing</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/cloud-services</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/last.fm</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/flickr</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/youtube</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/delicious</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/vimeo</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/spotify</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal?page=2</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/so-lets-start-drupal-8</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/sale-drippic</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal-6?page=2</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/perfect-drupal-development-environment</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal-7?page=2</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/multi-site-drupal-installations</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/ignite-cardiff-drupal-talk</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal-8</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/statistics</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/.net-magazine</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/article</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/work</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/mark-boulton-design</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/job</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/my-thoughts-drupal-app-store</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/drupalcon-coming-london-wanna-help</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/twitter-css-hack</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=5</loc><changefreq>always</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/my-new-blog</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/blog-it-alpha-launch</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/blog-it-whats-next</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/blog-it-development</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/blog?page=2</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/i-am-now-disqus-ing</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/drupal-iphone-webos-and-drippic</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/simple-twitter-anywhere-drupal-integration</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/drippic-twitpic-clone-built-drupal</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/twitter?page=2</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/cloud-part-2-cloud-hosting</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/rackspace-big-news-cloud-hosing</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/preview-new-lastfm-app-iphone</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/flickr-vs-drupal</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal?page=1</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal?page=3</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drippic</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/varnish</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/memcache</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/sale</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/media-queries-drupal</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/are-you-looking-freelancer</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/mark-boulton-design-studio-site-now-using-drupal</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal-6?page=1</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal-6?page=3</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/cvs</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/development</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/environment</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/perfect</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/me-drupal-7-and-its-competition</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/views-module-drupal-core</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal-7?page=1</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/how-to</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/cardiff</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/ignite</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/ignitecardiff</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/lack-blogging-new-job-and-drupal-book</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/2008-was-great-year-what-will-2009-bring</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/net-awards</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupalappstore</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupalcon</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/london</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/2011</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal-association</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/fairfield</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/august</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/css</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/hack</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/rainbow</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/rainbowtwitter</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/rainbowtwtr</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/chrisred</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/mb006</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/hacker</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/hacking</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/digital</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/red</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=6</loc><changefreq>always</changefreq><priority>0.31</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/vps.net</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/vps</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/html5</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/mess</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/blog-to-it</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/alpha</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/blogs</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/blog-it-what-it</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/why-i-am-using-skribit</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/blogupp-blog-promotion</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/lack-posts-easter</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/blog?page=1</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/iphone</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/webos</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/tweetie</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/anywhere</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/twitpic</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/can-twitter-style-site-be-made-drupal</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/twitter-api</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/twitter?page=1</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/cloud-hosting</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/server</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/hosting</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/jungle-disk</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/mosso</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/rackspace</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/slicehost</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/kevin-rose</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/video</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/photos</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/test</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal?page=4</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal-6-themes</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/theming</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/media-queries</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/design</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/jquery</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal-5</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/php</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/freelance</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/drupal-book-update</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/review-drupal-6-javascript-and-jquery-matt-butcher</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/review-drupal-6-themes-ric-shreves</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/streamline-drupal-cvs-checkout</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal-6?page=4</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/weekend-full-drupal</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/joomla</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/wordpress</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/views</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/how-setup-server-and-install-drupal</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/how-setup-web-server-using-ubuntu-server</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/how-get-loads-website-visitors</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/book</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/mbd</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/home</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/lullabot</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/maderia</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/toronto</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/wedding</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/netmag</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/awards</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/drupal-association-election-application</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/drupalcon-uk-2011-proposal</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/drupalcamp-uk-my-sessions</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/getting-ready-drupalcon</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/hard-rock-calling-2008</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=7</loc><changefreq>always</changefreq><priority>0.26</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/vpsnet-turnkey-linux-drupal</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/xv-xserve-virtual-mac-os-x-leopard-vps-server-media-temple</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/blog-it-update-redesign-and-swekey</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/blog-it-and-birthdays</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/nominate-blog-it-open-web-award-last-chance</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/blog-to-it?page=2</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/drupalmuorg-will-it-be-next-wordpressmu</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/skribit</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/advertising</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/blogupp!</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/promotion</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/easter</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/touchterm-iphone-app-i-have-been-waiting</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/how-not-jailbreak-your-apple-iphone</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/iphone?page=2</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/microblogging</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/api</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/mini-itx-server-project-part-2</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/mini-itx-server-project</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/millwood-online-has-moved-yet-again</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/server?page=2</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal?page=5</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/drupal-5-or-drupal-6</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/manipulating-pdfs-php</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/pdmd</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/wiley</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/wrox</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/ajax</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/javascript</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/review</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/packt</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/packt-publishing</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/ric-shreves</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/themes</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/bash</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/awesome-drupal-theme</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/contact-profile-module-can-you-think-better-name</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal-6?page=5</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/theme</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/module</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/referrer</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/ubercart</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/debian</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/install</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/setup</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/ubuntu</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/visitors</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/website</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/lullabot-drupal-training-toronto</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/toronto-canada</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/getting-back-normal</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/my-wedding-24-hour-countdown</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/marquee-celtic-manor</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupalconuk</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/election</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupalcamp</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupalcampuk</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/manchester</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/uk</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/washington-dc</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/2008</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/eric-clapton</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/hard-rock-calling</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/hyde-park</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/jason-mraz</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/john-mayer</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/robert-randolph</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/sheryl-crow</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/what-drupal</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/creating-simple-adobe-air-app</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=8</loc><changefreq>always</changefreq><priority>0.22</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/linux</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/turnkey</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/apple</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/(xv)</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/leopard</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/mac-os-x</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/media-temple</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/xserve-virtual</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/redesign</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/swekey</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/birthday</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/open-web-awards</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/nominate</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/blog-to-it?page=1</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/mu</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/app-store</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/touchterm</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/jailbreak</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/pwnagetool</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/iphone-20-and-app-store</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/italy-getting-unlocked-3g-iphone-soon</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/iphone-now-100-cheaper</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/iphone-will-be-3g-60-days-says-walt-mossberg</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/iphone-20</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/iphone?page=1</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/iphone?page=3</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/mini-itx</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/project</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/millwood-online</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/moved</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/spun-designs</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/i-have-moved</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/server?page=1</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal?page=6</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/manipulation</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/pdf</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/review-vmware-fusion-2-beta</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/contact-profile</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/drupal-themeing-part-2-update</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/drupal-themeimg-using-raincitys-basic-theme</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/new-look-millwood-online</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/fedora-10-macbook-pro</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/training</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/canada</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/honeymoon</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/celtic-manor</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/george-sampson-wins-britains-got-talent-2008</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/sunday-times-rich-list-2008</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/introduction</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/adobe</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/air</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/html</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/xml</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=9</loc><changefreq>always</changefreq><priority>0.18</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/apple?page=2</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/mashable-open-web-awards-voting</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/3g</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/italy</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/o2</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/cheaper</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/deal</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/discount</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/june</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/offer</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/wall-street-journal</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/walt-mossberg</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/2.0</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/sdk</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/iphone-sdk</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/(gs)</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/(mt)</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/grid-service</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/problems</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal?page=7</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/beta</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/fusion-2</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/vmware</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/update</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/basic</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/raincity</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/fedora</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/kubuntu</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/macbook-pro</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/redhat</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/andrew-jonston</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/george-sampson</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/itv</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/signature</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/rich-list</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/the-sunday-times</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=10</loc><changefreq>always</changefreq><priority>0.16</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/bulging-apple-macbook-pro-battery</loc><changefreq>always</changefreq><priority>0.14</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/apple?page=1</loc><changefreq>always</changefreq><priority>0.14</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/apple?page=3</loc><changefreq>always</changefreq><priority>0.14</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/mashable</loc><changefreq>always</changefreq><priority>0.14</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/lack-internet</loc><changefreq>always</changefreq><priority>0.14</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal?page=8</loc><changefreq>always</changefreq><priority>0.14</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/windows-7-beta</loc><changefreq>always</changefreq><priority>0.14</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/time-upgrade-drupal-62</loc><changefreq>always</changefreq><priority>0.14</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/zattoo-freeview-over-broadband</loc><changefreq>always</changefreq><priority>0.14</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=11</loc><changefreq>always</changefreq><priority>0.14</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/17</loc><changefreq>always</changefreq><priority>0.12</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/battery</loc><changefreq>always</changefreq><priority>0.12</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/bulge</loc><changefreq>always</changefreq><priority>0.12</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/c2d</loc><changefreq>always</changefreq><priority>0.12</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/adsl24</loc><changefreq>always</changefreq><priority>0.12</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/internet</loc><changefreq>always</changefreq><priority>0.12</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal?page=9</loc><changefreq>always</changefreq><priority>0.12</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/microsoft</loc><changefreq>always</changefreq><priority>0.12</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/vista</loc><changefreq>always</changefreq><priority>0.12</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/windows</loc><changefreq>always</changefreq><priority>0.12</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/windows-7</loc><changefreq>always</changefreq><priority>0.12</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/6.2</loc><changefreq>always</changefreq><priority>0.12</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/bbc</loc><changefreq>always</changefreq><priority>0.12</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/freeview</loc><changefreq>always</changefreq><priority>0.12</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/tv</loc><changefreq>always</changefreq><priority>0.12</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/zattoo</loc><changefreq>always</changefreq><priority>0.12</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/translations-drupal</loc><changefreq>always</changefreq><priority>0.12</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=12</loc><changefreq>always</changefreq><priority>0.12</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/voixio-free-phone-calls-over-internet</loc><changefreq>always</changefreq><priority>0.10</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal?page=10</loc><changefreq>always</changefreq><priority>0.10</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/live-diggnation-microsoft-silverlight</loc><changefreq>always</changefreq><priority>0.10</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/pioneer-ending-plasma-production-or-are-they</loc><changefreq>always</changefreq><priority>0.10</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/g18n</loc><changefreq>always</changefreq><priority>0.10</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/i18n</loc><changefreq>always</changefreq><priority>0.10</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/l10n</loc><changefreq>always</changefreq><priority>0.10</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/translations</loc><changefreq>always</changefreq><priority>0.10</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/us-presidential-race</loc><changefreq>always</changefreq><priority>0.10</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=13</loc><changefreq>always</changefreq><priority>0.10</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/free</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/phone</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/voip</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/voixio</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/why-i-use-drupal</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal?page=11</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/diggnation</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/digg</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/live</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/silverlight</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/display</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/kuro</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/pioneer</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/plasma</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/mccain</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/obama</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/presidential</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/us</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/usa</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=14</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/why</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/imagecache-and-lighttpd</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/drupal-too-general</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal?page=12</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/behind-scenes-diggnation-amsterdam</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/asus-eee-pc-900-update</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=15</loc><changefreq>always</changefreq><priority>0.09</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/imagecache</loc><changefreq>always</changefreq><priority>0.08</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/lighttpd</loc><changefreq>always</changefreq><priority>0.08</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/general</loc><changefreq>always</changefreq><priority>0.08</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/naked-wales-article-drupal</loc><changefreq>always</changefreq><priority>0.08</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal?page=13</loc><changefreq>always</changefreq><priority>0.08</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/amsterdam</loc><changefreq>always</changefreq><priority>0.08</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/asus</loc><changefreq>always</changefreq><priority>0.08</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/computer</loc><changefreq>always</changefreq><priority>0.08</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/eee-pc</loc><changefreq>always</changefreq><priority>0.08</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/laptop</loc><changefreq>always</changefreq><priority>0.08</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/change-web-browsers</loc><changefreq>always</changefreq><priority>0.08</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=16</loc><changefreq>always</changefreq><priority>0.08</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/naked-wales</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/writing-about-drupal-naked-wales-magazine-2</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/lightbox-makes-way-thickbox</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/drupal?page=14</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/asus-eee-pc-900</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/chrome</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/firefox</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/google</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/mozilla</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/safari</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/web-browser</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/webkit</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/my-wordle</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=17</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/magazine</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/writing</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/img-package</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/lightbox</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/thickbox</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/img-package-module-drupal</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/first-drupal-post</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/tags</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/wordle</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=18</loc><changefreq>always</changefreq><priority>0.07</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/modules</loc><changefreq>always</changefreq><priority>0.06</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=19</loc><changefreq>always</changefreq><priority>0.06</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/firefox-3-record-breaker</loc><changefreq>always</changefreq><priority>0.06</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=20</loc><changefreq>always</changefreq><priority>0.06</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/firefox-3</loc><changefreq>always</changefreq><priority>0.06</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/guinness-world-records</loc><changefreq>always</changefreq><priority>0.06</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=21</loc><changefreq>always</changefreq><priority>0.06</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=22</loc><changefreq>always</changefreq><priority>0.06</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/mercedes-benz-clc-class</loc><changefreq>always</changefreq><priority>0.06</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/pownce-carrier-spam</loc><changefreq>always</changefreq><priority>0.06</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=23</loc><changefreq>always</changefreq><priority>0.06</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/clc-class</loc><changefreq>always</changefreq><priority>0.05</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/mercedes-benz</loc><changefreq>always</changefreq><priority>0.05</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/pownce</loc><changefreq>always</changefreq><priority>0.05</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/spam</loc><changefreq>always</changefreq><priority>0.05</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=24</loc><changefreq>always</changefreq><priority>0.05</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/sunday-gardening</loc><changefreq>always</changefreq><priority>0.05</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/viewdles-face-recognition-system</loc><changefreq>always</changefreq><priority>0.05</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=25</loc><changefreq>always</changefreq><priority>0.05</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/gardening</loc><changefreq>always</changefreq><priority>0.05</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/jungle</loc><changefreq>always</changefreq><priority>0.05</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/sunday</loc><changefreq>always</changefreq><priority>0.05</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/weeds</loc><changefreq>always</changefreq><priority>0.05</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/face-recognition</loc><changefreq>always</changefreq><priority>0.05</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/viewdle</loc><changefreq>always</changefreq><priority>0.05</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog?page=26</loc><changefreq>always</changefreq><priority>0.05</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/blog/lineker-or-gandhi</loc><changefreq>always</changefreq><priority>0.05</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/ghandhi</loc><changefreq>always</changefreq><priority>0.05</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/gary-lineker</loc><changefreq>always</changefreq><priority>0.05</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/leicester</loc><changefreq>always</changefreq><priority>0.05</priority></url>
+<url><loc>http://www.millwoodonline.co.uk/tag/statue</loc><changefreq>always</changefreq><priority>0.05</priority></url>
 </urlset>
+ 
