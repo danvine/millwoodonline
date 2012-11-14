@@ -43,7 +43,7 @@ end
 
 get '/work/?' do
   @title = 'Work'
-  @description = 'Tim Millwood currently works at Acquia as a Client advisor. He is also taking on Drupal, Ruby-on-Rals and Sinatra freelance web development projects.'
+  @description = 'Tim Millwood currently works at Acquia as a Client advisor. He is also taking on Drupal, Ruby-on-Rals and Sinatra freelance website design and development projects.'
   cache_url(3600, true) {erb :work}
 end
 
@@ -159,13 +159,13 @@ end
 
 get '/php-drupal-web-developer-cardiff-abergavenny-wales-uk' do
   @head_title = "PHP / Drupal Web Developer based in Cardiff / Abergavenny, Wales, UK"
-  @description = "Tim Millwood is a PHP and Drupal developer working in Cardiff / Abergavenny, Wales, UK."
+  @description = "Tim Millwood is a PHP and Drupal developer working in Cardiff / Abergavenny, Wales, UK offering website design and development."
   erb :php
 end
 
 get '/ruby-on-rails-sinatra-web-developer-cardiff-abergavenny-wales-uk' do
   @head_title = "Ruby on Rails / Sinatra Web Developer based in Cardiff / Abergavenny, Wales, UK"
-  @description = "Tim Millwood is a Ruby-on-Rails and Sinatra developer working in Cardiff / Abergavenny, Wales, UK."
+  @description = "Tim Millwood is a Ruby-on-Rails and Sinatra developer working in Cardiff / Abergavenny, Wales, UK offering website design and development."
   erb :ruby
 end
 
