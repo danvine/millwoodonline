@@ -6,5 +6,6 @@ before do
   content_type 'text/html; charset=utf8'
   expires 300, :public
    
-  blockload
+  @args = request.path.split('/').map {|x| x=="" ? "/" : x}
+  @block = erb :block, :layout => false
 end

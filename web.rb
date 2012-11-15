@@ -30,6 +30,8 @@ require_relative 'models'
 require_relative 'helpers'
 require_relative 'routes/before'
 require_relative 'routes/errors'
+require_relative 'routes/feeds'
+require_relative 'routes/admin'
 
 get '/?' do
   cache_url(3600, true) {erb :home}
@@ -169,121 +171,4 @@ get '/ruby-on-rails-sinatra-web-developer-cardiff-abergavenny-wales-uk' do
   erb :ruby
 end
 
-# admin
-before '/admin/*' do
-  enforce_admin
-end
-
-get '/admin/content/?' do
-  @contents = Content.all(:order => [ :created.desc ])
-  @title = 'Content'
-  erb :content
-end
-
-get '/admin/content/edit/:id/?' do
-  id = Sanitize.clean(params[:id])
-  @contents = Content.first(:order => [ :created.desc ], :id => id)
-  @title = "Edit '#{@contents.title}'"
- 
-  erb :addcontent
-end
-
-post '/admin/content/edit/:id/?' do
-  content_attributes = params[:content]
-  content_attributes['created'] = Time.now
-  id = Sanitize.clean(params[:id])
-  content = Content.get(id)
-  content_attributes['tags'].split(',').each do |tag|
-    tag_data = Tag.first_or_create(:tag => tag.lstrip.rstrip)
-    content.tags << tag_data
-  end
-  content.title = content_attributes['title']
-  content.type = 'blog'
-  content.legacy_tags = content_attributes['tags']
-  content.body = content_attributes['body']
-  content.alias = content_attributes['alias']
-  content.published = content_attributes['published']? true : false
-  content.created = Time.now if content_attributes['update_created']
-  content.save
-  redirect "/admin/content/edit/#{id}"
-end
-
-get '/admin/content/add/?' do
-  @title = 'Add Content'
-  erb :addcontent
-end
-
-post '/admin/content/add/?' do
-  content_attributes = params[:content]
-  content = Content.create
-  content_attributes['tags'].split(',').each do |tag|
-    tag_data = Tag.first_or_create(:tag => tag.lstrip.rstrip)
-    content.tags << tag_data
-  end
-  content.title = content_attributes['title']
-  content.type = 'blog'
-  content.legacy_tags = content_attributes['tags']
-  content.body = content_attributes['body']
-  content.alias = content_attributes['alias']
-  content.published = content_attributes['published']? true : false
-  content.created = Time.now if content_attributes['update_created']
-  content.save
-
-  if content_attributes['published']
-    redirect "/blog/#{content.alias}"
-  else
-    redirect "/admin/content"
-  end  
-end
-
-# Feeds
-get '/taxonomy/term/25/0/feed/?' do
-  content_type 'text/xml; charset=utf8'
-  page = is_cached
-  if page
-    return page
-  end
-  
-  @contents = Content.all(:type => 'blog', :published => true, :content_tags => {:tag_id => Tag.first(:tag => 'drupal').id}, :order => [ :created.desc ], :limit => 10)
-  page = builder :rss
-  set_cache(page)
-end
-
-get '/rss.xml' do
-  content_type 'text/xml; charset=utf8'
-  page = is_cached
-  if page
-    return page
-  end
-  
-  @contents = Content.all(:fields => [:title, :body, :created, :alias], :type => 'blog', :published => true, :limit => 10, :order => [ :created.desc ])
-  page = builder :rss
-  set_cache(page)
-end
-
-# Redirects
-get '/node/:nid/?' do
-  nid = Sanitize.clean(params[:nid])
-  contents = Content.first(:fields => [:alias], :type => 'blog', :published => true, :id => nid)
-  if contents.nil?
-    halt 404
-  end
-  redirect '/blog/' + contents.alias, 301
-end
-
-get '/tags/*' do
-  redirect '/tag/' + params[:splat].first
-end
-
-get '/taxonomy/term/25/?' do
-  redirect '/tag/drupal', 301
-end
-
-get '/:alias/?' do
-  url_alias = Sanitize.clean(params[:alias])
-  contents = Content.first(:fields => [:alias], :type => 'blog', :published => true, :alias => url_alias)
-  if contents.nil?
-    halt 404
-  end
-  redirect '/blog/' + contents.alias, 301
-end
+require_relative 'routes/redirects'
