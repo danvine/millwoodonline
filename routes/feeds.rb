@@ -32,3 +32,17 @@ get '/blog/rss.xml' do
   page = builder :rss
   set_cache(page)
 end
+
+get '/sitemap.xml' do
+  content_type 'text/xml; charset=utf8'
+  page = is_cached
+  if page
+    return page
+  end
+
+  @contents = Content.all(:fields => [:alias, :created], :type => 'blog', :published => true, :order => [ :created.desc ])
+  @tags = Tag.all(:fields => [:tag])
+
+  page = builder :sitemap
+  set_cache(page)
+end
