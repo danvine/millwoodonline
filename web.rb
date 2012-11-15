@@ -58,10 +58,10 @@ get '/blog/?' do
   if params[:page]
     page = Integer(params[:page])
     offset = 5*page-5
-    @contents = Content.all(:fields => [:title, :body, :alias], :type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5, :offset => offset)
+    @contents = Content.all(:fields => [:title, :body, :alias, :created], :type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5, :offset => offset)
     
   else
-    @contents = Content.all(:fields => [:title, :body, :alias], :type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5)
+    @contents = Content.all(:fields => [:title, :body, :alias, :created], :type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5)
   end
   
   size = @contents.size

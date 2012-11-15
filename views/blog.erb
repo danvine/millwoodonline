@@ -2,9 +2,21 @@
 <div>
 <h2><a href="/blog/<%= content.alias %>"><%= content.title %></a></h2>
 <% n=50 %>
-<%= Sanitize.clean(content.body.split(/\s+/, n+1)[0...n].join(' ')) %>
-... <a href="/blog/<%= content.alias %>">[read more]</a>
+<p><i class="icon-time"></i> <strong><%= content.created.strftime("%d %B %Y") %></strong>
+<%= Sanitize.clean(" - #{content.body.split(/\s+/, n+1)[0...n].join(' ')}...") %> <a href="<%= request.url.chomp request.path_info %>/blog/<%= content.alias %>#disqus_thread">comments</a></p>
 <hr/>
 </div>
 <% end %>
 <%= @pager %>
+        <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'millwoodonline'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+        </script>

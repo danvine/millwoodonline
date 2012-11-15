@@ -1,27 +1,23 @@
 get '/node/:nid/?' do
   nid = Sanitize.clean(params[:nid])
   result = REDIS.get("redirect:node/#{nid}")
-  if result and result == '404'
+  if result
     response.header['redis'] = 'HIT'
-    halt 404
-  elsif result
-    response.header['redis'] = 'HIT'
-    redirect '/blog/' + result, 301
+    redirect result, 301
   end
 
   contents = Content.first(:fields => [:alias], :type => 'blog', :published => true, :id => nid)
+  response.header['redis'] = 'MISS'
 
   if contents.nil?
-    result = 404
+    result = '/'
     REDIS.setex("redirect:node/#{nid}", 31536000,result)
-    response.header['redis'] = 'MISS'
-    halt 404
+    redirect result
   end
 
-  result = contents.alias
+  result = '/blog/' + contents.alias
   REDIS.setex("redirect:node/#{nid}", 31536000,result)
-  response.header['redis'] = 'MISS'
-  redirect '/blog/' + contents.alias, 301
+  redirect result, 301
 end
 
 get '/tags/*' do
