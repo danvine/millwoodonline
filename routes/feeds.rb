@@ -1,4 +1,5 @@
 get '/tag/:tag/rss.xml' do
+  content_type 'text/xml; charset=utf8'
   page = is_cached
   if page
     return page
