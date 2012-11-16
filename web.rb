@@ -34,7 +34,13 @@ require_relative 'routes/feeds'
 require_relative 'routes/admin'
 
 get '/?' do
-  cache_url(3600, true) {erb :home}
+  html = is_cached
+  if html
+    return html
+  end
+  @contents = Content.first(:fields => [:title, :alias, :created], :type => 'blog', :published => true, :order => [ :created.desc ])
+  html = erb :home
+  set_cache(html)
 end
 
 get '/about/?' do

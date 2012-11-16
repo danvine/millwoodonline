@@ -2,3 +2,10 @@
 <h1>Hi, I'm <a href="https://twitter.com/timmillwood">Tim</a></h1>
 <p>I'm a <a href="http://en.wikipedia.org/wiki/Web_developer">web developer</a> based in <a href="http://en.wikipedia.org/wiki/Abergavenny">Abergavenny</a>, <a href="http://en.wikipedia.org/wiki/Wales">Wales</a>, <a href="http://en.wikipedia.org/wiki/United_Kingdom">UK</a>. I work for <a href="http://en.wikipedia.org/wiki/Acquia">Acquia</a> helping people with <a href="http://en.wikipedia.org/wiki/Drupal">Drupal</a>. This site is constructed in <a href="http://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a>, using <a href="http://en.wikipedia.org/wiki/Sinatra_(software)">Sinatra</a>.</p>
 </div>
+<% if @contents %>
+<div class="well well-small">
+<span class="label label-info">Blogged:</span>
+<i class="icon-time"></i> <strong><%= @contents.created.strftime("%d %B %Y") %></strong>
+<a href="/blog/<%= @contents.alias %>" class="blog-link"><%= @contents.title %></a>
+</div>
+<% end %>
