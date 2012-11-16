@@ -13,6 +13,10 @@
   display: inline-block;
 }
 
+.media .pull-left {
+  float: left;
+}
+
 @media (max-width: 320px) {
   .avatar {
     margin-right: 33px;
@@ -28,7 +32,7 @@
      margin-bottom: 10px;
    }
 
-  .media .pull-left {
-    float: left;
+  ins iframe {
+    margin-left: -10px;
   }
 }
