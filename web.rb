@@ -174,4 +174,10 @@ get '/ruby-on-rails-sinatra-web-developer-cardiff-abergavenny-wales-uk' do
   erb :ruby
 end
 
+get '/rip-drippic' do
+  @title = "R.I.P Drippic"
+  @description = "Drippic has closed."
+  erb '<p>Sorry, Drippic has closed.</p><p>The code is still available on <a href="http://drupal.org/project/drippic">Drupal.org</a> if you really want is</p>'
+end
+
 require_relative 'routes/redirects'
