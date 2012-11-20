@@ -55,7 +55,8 @@ get '/work/?' do
   cache_url(3600, true) {erb :work}
 end
 
-get '/blog/?' do
+get '/blog/?:page?/?' do
+  pass if params[:page] and !params[:page].match(/\A[0-9]+\Z/)
   html = is_cached
   if html
     return html
@@ -69,10 +70,10 @@ get '/blog/?' do
   else
     @contents = Content.all(:fields => [:title, :body, :alias, :created], :type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5)
   end
-  
+  halt 404 if @contents.empty?
   size = @contents.size
-  pager_prev = "<li class='previous'><a href='/blog?page=#{page-1}'>&larr; Newer</a></li>" if page > 1
-  pager_next = "<li class='next'><a href='/blog?page=#{page+1}'>Older &rarr;</a></li>" if size == 5
+  pager_prev = "<li class='previous'><a href='/blog/#{page-1}'>&larr; Newer</a></li>" if page > 1
+  pager_next = "<li class='next'><a href='/blog/#{page+1}'>Older &rarr;</a></li>" if size == 5
   @pager = "<ul class='pager'>#{pager_prev}#{pager_next}</ul>"
   @title = 'Blog'
   @description = 'Millwood Online Blog features many articles on Drupal, Ruby-on-Rails, Sinatra and related Web Development topics.'
@@ -91,9 +92,7 @@ get '/blog/:title/?' do
   else
     @contents = Content.first(:type => 'blog', :published => true, :alias => title)
   end
-  if @contents.nil?
-    halt 404
-  end
+  halt 404 if @contents.nil?
 
   @title = @contents.title
   @description = "A blog post about #{@contents.tags.map{|tag| tag.tag}.join(', ')} posted on #{@contents.created.strftime("%d %B %Y")} by Tim Millwood"
@@ -101,7 +100,8 @@ get '/blog/:title/?' do
   set_cache(html)
 end
 
-get '/tag/:tag/?' do
+get '/tag/:tag/?:page?/?' do
+  pass if params[:page] and !params[:page].match(/\A[0-9]+\Z/)
   html = is_cached
   if html
     return html
@@ -121,13 +121,10 @@ get '/tag/:tag/?' do
     @contents = Content.all(:type => 'blog', :published => true, :content_tags => {:tag_id => tag_id.id}, :order => [ :created.desc ], :limit => 5)
    end
   
-  if @contents.size == 0
-    halt 404
-  end
-  
+  halt 404 if @contents.empty?
   size = @contents.size
-  pager_prev = "<li class='previous'><a href='/tag/#{Sanitize.clean(params[:tag])}?page=#{page-1}'>&larr; Newer</a></li>" if page > 1
-  pager_next = "<li class='next'><a href='/tag/#{Sanitize.clean(params[:tag])}?page=#{page+1}'>Older &rarr;</a></li>" if size == 5
+  pager_prev = "<li class='previous'><a href='/tag/#{Sanitize.clean(params[:tag])}/#{page-1}'>&larr; Newer</a></li>" if page > 1
+  pager_next = "<li class='next'><a href='/tag/#{Sanitize.clean(params[:tag])}/#{page+1}'>Older &rarr;</a></li>" if size == 5
   @pager = "<ul class='pager'>#{pager_prev}#{pager_next}</ul>"
   @title = "#{Sanitize.clean(params[:tag]).gsub('-', ' ').capitalize}"
   @description = "Blog posts relating to #{Sanitize.clean(params[:tag]).gsub('-', ' ').capitalize}."
