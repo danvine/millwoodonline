@@ -177,7 +177,7 @@ end
 get '/rip-drippic' do
   @title = "R.I.P Drippic"
   @description = "Drippic has closed."
-  erb '<p>Sorry, Drippic has closed.</p><p>The code is still available on <a href="http://drupal.org/project/drippic">Drupal.org</a> if you really want is</p>'
+  erb '<p>Sorry, Drippic has closed.</p><p>The code is still available on <a href="http://drupal.org/project/drippic">Drupal.org</a> if you really want it.</p>'
 end
 
 require_relative 'routes/redirects'
