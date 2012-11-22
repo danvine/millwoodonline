@@ -7,7 +7,7 @@ before do
   if !logged_in?
    expires 3600, :public, :must_revalidate
   else
-    cache_control :no_cache, :max_age => 0
+    cache_control :no_cache
   end
 
   @args = request.path.split('/').map {|x| x=="" ? "/" : x}
