@@ -6,8 +6,6 @@ gem 'unicorn'
 gem 'rack-canonical-host'
 gem 'rack_csrf'
 gem 'rack-flash3'
-gem 'rack-cache'
-gem 'redis-rack-cache'
 
 gem 'sinatra'
 

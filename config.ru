@@ -6,8 +6,4 @@ use Rack::Session::Cookie, :secret => ENV['SECRET'], :key => 'millwoodonline'
 use Rack::Flash
 use Rack::Csrf, :raise => true
 
-use Rack::Cache,
-  :metastore   => ENV["REDISTOGO_URL"],
-  :entitystore => ENV["REDISTOGO_URL"]
-
 run Sinatra::Application

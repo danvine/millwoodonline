@@ -1,8 +1,7 @@
 require 'rack/csrf'
 require 'rack-flash'
 require 'rack-canonical-host'
-require 'rack/cache'
-require 'redis-rack-cache'
+
 require 'sinatra'
 require 'data_mapper'
 require 'digest/sha1'

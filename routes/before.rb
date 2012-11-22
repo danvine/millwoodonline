@@ -4,14 +4,7 @@ before do
   end
 
   content_type 'text/html; charset=utf8'
-  
-  if ['/login', '/signup', '/contact'].include? request.path
-    cache_control :no_cache
-  elsif !logged_in?
-   expires 3600, :public, :must_revalidate
-  else
-    cache_control :no_cache
-  end
+  expires 3600, :public, :must_revalidate
 
   @args = request.path.split('/').map {|x| x=="" ? "/" : x}
   @block = erb :block, :layout => false

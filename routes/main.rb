@@ -1,8 +1,11 @@
-get '/' do
+get '/?' do
+  html = is_cached
+  if html
+    return html
+  end
   @contents = Content.first(:fields => [:title, :alias, :created], :type => 'blog', :published => true, :order => [ :created.desc ])
   html = erb :home
-  etag Digest::SHA1.hexdigest(html)
-  return html
+  set_cache(html)
 end
 
 get '/about/?' do
