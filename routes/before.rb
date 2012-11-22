@@ -4,8 +4,12 @@ before do
   end
 
   content_type 'text/html; charset=utf8'
-  expires 3600, :public
-   
+  if !logged_in?
+   expires 3600, :public, :must_revalidate
+  else
+    cache_control :no_cache, :max_age => 0
+  end
+
   @args = request.path.split('/').map {|x| x=="" ? "/" : x}
   @block = erb :block, :layout => false
 end
