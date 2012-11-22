@@ -1,15 +1,22 @@
 source :rubygems
 ruby "1.9.3"
+
+gem 'unicorn'
+
+gem 'rack-canonical-host'
+gem 'rack_csrf'
+gem 'rack-flash3'
+
 gem 'sinatra'
-gem 'thin', '1.5.0'
-gem 'haml'
+
 gem 'data_mapper'
 gem 'dm-postgres-adapter'
-gem 'rack-flash3'
 gem 'sinatra-authentication', :git => 'git://github.com/timmillwood/sinatra-authentication.git'
 gem 'sanitize'
 gem 'pony'
 gem 'builder'
-gem 'newrelic_rpm'
-gem 'rack_csrf'
 gem 'redis'
+
+group :production do
+  gem "newrelic_rpm"
+end
