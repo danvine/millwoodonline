@@ -28,7 +28,7 @@ get '/blog/rss.xml' do
     return page
   end
   
-  @contents = Content.all(:fields => [:title, :body, :created, :alias], :type => 'blog', :published => true, :limit => 10, :order => [ :created.desc ])
+  @contents = Content.all(:fields => [:title, :body, :created, :alias, :markdown], :type => 'blog', :published => true, :limit => 10, :order => [ :created.desc ])
   page = builder :rss
   set_cache(page)
 end
