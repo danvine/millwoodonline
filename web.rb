@@ -10,6 +10,7 @@ require 'sanitize'
 require 'pony'
 require 'builder'
 require 'redis'
+require 'sinatra-arg'
 
 require_relative 'config'
 require_relative 'models/main'

@@ -6,6 +6,6 @@ before do
   content_type 'text/html; charset=utf8'
   expires 3600, :public, :must_revalidate
 
-  @args = request.path.split('/').map {|x| x=="" ? "/" : x}
+  #@args = request.path.split('/').map {|x| x=="" ? "/" : x}
   @block = erb :block, :layout => false
 end

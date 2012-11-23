@@ -19,8 +19,8 @@
     <meta name="author" content="Tim Millwood">
     <META NAME="robots" CONTENT="index, follow">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-    <% if @args[1] == 'tag' %>
-      <link rel="alternate" type="application/rss+xml" href="/tag/<%= Sanitize.clean(@args[2]) %>/rss.xml" title="Millwood Online - <%= Sanitize.clean(@args[2]) %>">
+    <% if arg(0) == 'tag' %>
+      <link rel="alternate" type="application/rss+xml" href="/tag/<%= Sanitize.clean(arg(1)) %>/rss.xml" title="Millwood Online - <%= Sanitize.clean(arg(1)) %>">
     <% else %>
       <link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Millwood Online - Blog">
     <% end %>
@@ -92,11 +92,11 @@
        <% end %>
        <%= yield %>
        
-       <% if @args[1] == 'tag' and @args[2] %>
-       <p><a href="/tag/<%= Sanitize.clean(@args[2]) %>/rss.xml"><img src="/img/feed-icon-28x28.png" alt="RSS Feed" /></a> <a href="/tag/<%= Sanitize.clean(@args[2]) %>/rss.xml">RSS Feed</a></p>
+       <% if arg(0) == 'tag' and arg(0) %>
+       <p><a href="/tag/<%= Sanitize.clean(arg(1)) %>/rss.xml"><img src="/img/feed-icon-28x28.png" alt="RSS Feed" /></a> <a href="/tag/<%= Sanitize.clean(arg(1)) %>/rss.xml">RSS Feed</a></p>
        <% end %>
 
-      <% if @args[1] == 'blog' and !@args[2] %>
+      <% if arg(0) == 'blog' and !arg(1) %>
        <p><a href="/blog/rss.xml"><img src="/img/feed-icon-28x28.png" alt="RSS Feed" /></a> <a href="/blog/rss.xml">RSS Feed</a></p>
        <% end %>
 
