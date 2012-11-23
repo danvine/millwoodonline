@@ -11,6 +11,7 @@ require 'pony'
 require 'builder'
 require 'redis'
 require 'sinatra-arg'
+require 'maruku'
 
 require_relative 'config'
 require_relative 'models/main'

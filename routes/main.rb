@@ -30,12 +30,13 @@ get '/blog/?:page?/?' do
   if params[:page]
     page = Integer(params[:page])
     offset = 5*page-5
-    @contents = Content.all(:fields => [:title, :body, :alias, :created], :type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5, :offset => offset)
+    @contents = Content.all(:fields => [:title, :body, :alias, :created, :markdown], :type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5, :offset => offset)
     
   else
-    @contents = Content.all(:fields => [:title, :body, :alias, :created], :type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5)
+    @contents = Content.all(:fields => [:title, :body, :alias, :created, :markdown], :type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5)
   end
   halt 404 if @contents.empty?
+
   size = @contents.size
   pager_prev = "<li class='previous'><a href='/blog/#{page-1}'>&larr; Newer</a></li>" if page > 1
   pager_next = "<li class='next'><a href='/blog/#{page+1}'>Older &rarr;</a></li>" if size == 5
@@ -61,6 +62,10 @@ get '/blog/:title/?' do
 
   @title = @contents.title
   @description = "A blog post about #{@contents.tags.map{|tag| tag.tag}.join(', ')} posted on #{@contents.created.strftime("%d %B %Y")} by Tim Millwood"
+  if @contents.markdown
+    body = Maruku.new(@contents.body)
+    @contents.body = body.to_html
+  end
   html = erb :blog_post
   set_cache(html)
 end

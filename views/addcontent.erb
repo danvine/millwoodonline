@@ -13,13 +13,18 @@
   <label for='content_alias'>Alias</label>
   <input id='content_alias' name='content[alias]' size='30' type='text' class='span8'  value="<%= @contents.alias if defined? @contents %>"/>
   
+  <label for='markdown'>Format</label>
+  <select id='markdown' name='content[markdown]'>
+    <option value='true'<%= ' selected="selected"' if(defined? @contents and @contents.markdown == true) %>>Markdown</option>
+    <option value='false'<%= ' selected="selected"' if(defined? @contents and @contents.markdown == false) %>>Full HTML</option>
+  </select>
+
   <label for='content_update_created' class='checkbox'>
-    <input type='checkbox' name='content[update_created]' value='true' checked="checked"> Update created date
+    <input id='content_update_created' type='checkbox' name='content[update_created]' value='true' /> Update created date
   </label>
   
-  
   <label for='content_published' class='checkbox'>
-    <input type='checkbox' name='content[published]' value='true'<%= ' checked="checked"' if(defined? @contents and @contents.published == true) %>> Publish
+    <input id='content_published' type='checkbox' name='content[published]' value='true'<%= ' checked="checked"' if(defined? @contents and @contents.published == true) %> /> Publish
   </label>
   
   <div class="form-actions">

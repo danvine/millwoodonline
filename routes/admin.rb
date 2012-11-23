@@ -30,6 +30,7 @@ post '/admin/content/edit/:id/?' do
   content.legacy_tags = content_attributes['tags']
   content.body = content_attributes['body']
   content.alias = content_attributes['alias']
+  content.markdown = content_attributes['markdown']
   content.published = content_attributes['published']? true : false
   content.created = Time.now if content_attributes['update_created']
   content.save

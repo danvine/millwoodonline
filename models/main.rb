@@ -9,6 +9,7 @@ DataMapper.setup(:default, ENV['HEROKU_POSTGRESQL_SILVER_URL'])
         property :created,  DateTime
         property :alias,    String, :length => 256, :index => true
         property :legacy_tags,     String, :length => 256, :index => true
+        property :markdown, Boolean, :default  => true, :index => true
         property :published, Boolean, :default  => false, :index => true
         
         has n, :tags, :through => Resource

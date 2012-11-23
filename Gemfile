@@ -17,6 +17,7 @@ gem 'sanitize'
 gem 'pony'
 gem 'builder'
 gem 'redis'
+gem 'maruku'
 
 group :production do
   gem "newrelic_rpm"
