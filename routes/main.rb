@@ -102,6 +102,35 @@ get '/tag/:tag/?:page?/?' do
   set_cache(html)
 end
 
+get '/archive/:date/?:page?/?' do
+  halt 404 if params[:date] and (!params[:date].match(/\A[0-9]+\Z/) or params[:date].length != 6)
+  halt 404 if params[:page] and !params[:page].match(/\A[0-9]+\Z/)
+  date = params[:date].scan(/.{1,4}/).map {|id| Integer(id) }
+  html = is_cached
+  if html
+    return html
+  end
+  page = 1
+  if params[:page]
+    page = Integer(params[:page])
+    offset = 5*page-5
+    @contents = Content.all(:fields => [:title, :body, :alias, :created, :markdown], :conditions => [ 'created >= ? and created < ?', "#{date[0]}-#{date[1]}-01", "#{date[0]}-#{date[1]+1}-01"], :type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5, :offset => offset)
+    
+  else
+    @contents = Content.all(:fields => [:title, :body, :alias, :created, :markdown], :conditions => [ 'created >= ? and created < ?', "#{date[0]}-#{date[1]}-01", "#{date[0]}-#{date[1]+1}-01"], :type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5)
+  end
+  halt 404 if @contents.empty?
+
+  size = @contents.size
+  pager_prev = "<li class='previous'><a href='/archive/#{params[:date]}/#{page-1}'>&larr; Newer</a></li>" if page > 1
+  pager_next = "<li class='next'><a href='/archive/#{params[:date]}/#{page+1}'>Older &rarr;</a></li>" if size == 5
+  @pager = "<ul class='pager'>#{pager_prev}#{pager_next}</ul>"
+  @title = "Archive - #{Date::MONTHNAMES[date[1]]} #{date[0]}"
+  @description = "Archive of blog posts from #{Date::MONTHNAMES[date[1]]} #{date[0]}Millwood Online Blog features many articles on Drupal, Ruby-on-Rails, Sinatra and related Web Development topics."
+  html = erb :blog
+  set_cache(html)
+end
+
 get '/contact/?' do
   @title = 'Contact'
   @description = "Call 01873 878587 or email Tim Millwood."
