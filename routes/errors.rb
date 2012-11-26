@@ -1,11 +1,17 @@
 not_found do
-  erb "<h1>404: Page not found</h1>"
+  @title = "404"
+  @description = "Error: 404 - Millwood Online"
+  erb "<h2>Page not found</h2>"
 end
 
 error 500 do
-  erb "<h1>500: oops</h1>" + env['sinatra.error'].message
+  @title = "500"
+  @description = "Error: 500 - Millwood Online"
+  erb "<h2>oops</h2>" + env['sinatra.error'].message
 end
 
 error 403 do
-  erb "<h1>403: Access denied</h1>"
+  @title = "403"
+  @description = "Error: 503 - Millwood Online"
+  erb "<h2>Access denied</h2>"
 end
