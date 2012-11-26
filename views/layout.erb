@@ -92,7 +92,7 @@
        <% end %>
        <%= yield %>
        
-       <% if arg(0) == 'tag' and arg(0) %>
+       <% if arg(0) == 'tag' and arg(1) %>
        <p><a href="/tag/<%= Sanitize.clean(arg(1)) %>/rss.xml"><img src="/img/feed-icon-28x28.png" alt="RSS Feed" /></a> <a href="/tag/<%= Sanitize.clean(arg(1)) %>/rss.xml">RSS Feed</a></p>
        <% end %>
 

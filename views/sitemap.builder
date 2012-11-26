@@ -1,7 +1,7 @@
 xml.instruct! :xml, :version => "1.0", :encoding => "UTF-8"
   xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
     
-    ["", "/about", "/work", "/php-drupal-web-developer-cardiff-abergavenny-wales-uk", "/ruby-on-rails-sinatra-web-developer-cardiff-abergavenny-wales-uk", "/blog", "/contact"].each do |path|
+    ["", "/about", "/work", "/php-drupal-web-developer-cardiff-abergavenny-wales-uk", "/ruby-on-rails-sinatra-web-developer-cardiff-abergavenny-wales-uk", "/blog", "/contact", "/tag"].each do |path|
       xml.url do
         xml.loc "#{request.url.chomp request.path_info}#{path}"
         xml.lastmod Time.now.strftime("%Y-%m-%d")

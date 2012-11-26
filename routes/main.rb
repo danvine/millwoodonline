@@ -70,6 +70,22 @@ get '/blog/:title/?' do
   set_cache(html)
 end
 
+get '/tag/?' do
+  html = is_cached
+  if html
+    return html
+  end
+  results = ""
+  tags = Tag.all(:order => [:tag.asc])
+  tags.each do |tag|
+    results = "#{results} <a href='/tag/#{tag.tag.gsub(' ', '-')}'>#{tag.tag}</a>"
+  end
+  @title = "Tags"
+  @description = "All of the tags from the Millwood Online Blog posts."
+  html = erb results
+  set_cache(html)
+end
+
 get '/tag/:tag/?:page?/?' do
   pass if params[:page] and !params[:page].match(/\A[0-9]+\Z/)
   html = is_cached
