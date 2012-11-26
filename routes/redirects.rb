@@ -24,6 +24,10 @@ get '/tags/*' do
   redirect '/tag/' + params[:splat].first, 301
 end
 
+get '/tags/?' do
+  redirect '/tag', 301
+end
+
 get '/taxonomy/term/25/0/feed/?' do
   redirect '/tag/drupal/rss.xml', 301
 end
@@ -31,6 +35,11 @@ end
 get '/taxonomy/term/25/?' do
   redirect '/tag/drupal', 301
 end
+
+get '/taxonomy/?*?' do
+  redirect '/tag', 301
+end
+
 
 get '/rss.xml' do
   redirect '/blog/rss.xml', 301
