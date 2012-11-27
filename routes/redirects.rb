@@ -40,6 +40,9 @@ get '/taxonomy/?*?' do
   redirect '/tag', 301
 end
 
+get '/photos/?*?' do
+  redirect '/rip-drippic', 301
+end
 
 get '/rss.xml' do
   redirect '/blog/rss.xml', 301

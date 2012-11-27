@@ -29,6 +29,7 @@ helpers do
     tag = "url:#{request.url}"
     page = REDIS.get(tag)
     if page and !logged_in?
+      expires 3600, :public, :must_revalidate
       etag Digest::SHA1.hexdigest(page)
       ttl = 3600 - REDIS.ttl(tag)
       response.header['Age'] = ttl.to_s
@@ -38,10 +39,15 @@ helpers do
   end
   
   def set_cache(page)
-    etag Digest::SHA1.hexdigest(page)
-    tag = "url:#{request.url}"
+    if page and !logged_in?
+      expires 3600, :public, :must_revalidate
+      etag Digest::SHA1.hexdigest(page)
+      tag = "url:#{request.url}"
+      REDIS.setex(tag, 3600, page)
+    else
+      cache_control :no_cache
+    end
     response.header['X-redis'] = 'MISS'
-    REDIS.setex(tag, 3600, page) if !logged_in?
     return page
   end
 end
