@@ -15,6 +15,12 @@
     <% else %>
      <meta name="description" content="The digital home of Tim Millwood, a PHP / Drupal & Ruby-on-Rails / Sinatra Web Developer based in Cardiff / Abergavenny, Wales, UK">
     <% end %>
+    <% if @title and @twitter_description %>
+    <meta name="twitter:creator" content="@timmillwood">
+    <meta name="twitter:url" content="<%= request.url %>">
+    <meta name="twitter:title" content="<%= @title %>">
+    <meta name="twitter:description" content="<%= @twitter_description %>">
+    <% end %>
     <link rel="author" href="https://plus.google.com/112785318169610930599">
     <meta name="author" content="Tim Millwood">
     <META NAME="robots" CONTENT="index, follow">
