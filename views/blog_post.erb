@@ -6,6 +6,9 @@
   <%= "<a href='/tag/#{tag.tag.gsub(' ', '-')}'>#{tag.tag}</a>" %>
   <% end %>
 </div>
+<% if @contents.file %>
+<img src="//static.millwoodonline.co.uk/images/<%= @contents.file %>" style="width:100%;height:auto;margin: 5px 0 10px 0;" />
+<% end %>
 
 <div class="pull-right share-buttons">
 <a href="http://news.ycombinator.com/submit" class="hn-share-button" data-title="<%= @contents.title %>" data-url="<%= request.url %>">Vote on HN</a>

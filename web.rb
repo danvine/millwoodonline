@@ -12,6 +12,7 @@ require 'builder'
 require 'redis'
 require 'sinatra-arg'
 require 'maruku'
+require 'aws/s3'
 
 require_relative 'config'
 require_relative 'models/main'

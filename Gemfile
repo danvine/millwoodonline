@@ -18,6 +18,7 @@ gem 'pony'
 gem 'builder'
 gem 'redis'
 gem 'maruku'
+gem 'aws-s3'
 
 group :production do
   gem "newrelic_rpm"

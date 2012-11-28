@@ -18,18 +18,20 @@ end
 
 post '/admin/content/edit/:id/?' do
   content_attributes = params[:content]
-  content_attributes['created'] = Time.now
   id = Sanitize.clean(params[:id])
   content = Content.get(id)
+  content.tags.all.destroy
   content_attributes['tags'].split(',').each do |tag|
     tag_data = Tag.first_or_create(:tag => tag.lstrip.rstrip)
     content.tags << tag_data
   end
   content.title = content_attributes['title']
   content.type = 'blog'
-  content.legacy_tags = content_attributes['tags']
   content.body = content_attributes['body']
   content.alias = content_attributes['alias']
+  if content_attributes['file']
+    content.file = upload(content_attributes['file'][:filename], content_attributes['file'][:tempfile])
+  end
   content.markdown = content_attributes['markdown']
   content.published = content_attributes['published']? true : false
   content.created = Time.now if content_attributes['update_created']
@@ -51,9 +53,9 @@ post '/admin/content/add/?' do
   end
   content.title = content_attributes['title']
   content.type = 'blog'
-  content.legacy_tags = content_attributes['tags']
   content.body = content_attributes['body']
   content.alias = content_attributes['alias']
+  content.markdown = content_attributes['markdown']
   content.published = content_attributes['published']? true : false
   content.created = Time.now if content_attributes['update_created']
   content.save

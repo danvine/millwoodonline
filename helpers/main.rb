@@ -5,6 +5,19 @@ helpers do
       halt 403
     end
   end
+
+  def upload(filename, file)
+    AWS::S3::Base.establish_connection!(
+      :access_key_id     => ENV['ACCESS_KEY_ID'],
+      :secret_access_key => ENV['SECRET_ACCESS_KEY']
+    )
+    AWS::S3::S3Object.store(
+      'images/' + filename,
+      open(file.path),
+      'millwoodonline'
+    )
+    return filename
+  end
   
   def cache(tag,ttl,use_cache,block)
     page = REDIS.get(tag)

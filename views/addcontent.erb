@@ -1,4 +1,4 @@
-<form action='<%= request.path %>' method='post'>
+<form action='<%= request.path %>' method='post' accept-charset="utf-8" enctype="multipart/form-data">
   <%= Rack::Csrf.csrf_tag(env) %>
   
   <label for='content_title'>Title</label>
@@ -12,9 +12,12 @@
   
   <label for='content_alias'>Alias</label>
   <input id='content_alias' name='content[alias]' size='30' type='text' class='span8'  value="<%= @contents.alias if defined? @contents %>"/>
+
+  <label for='content_file'>Image <%= "<a href='//static.millwoodonline.co.uk/images/#{@contents.file}' target='_blank'>#{@contents.file}</a>" if @contents and @contents.file %></label>
+  <input type="file" name="content[file]" id="content_file" />
   
-  <label for='markdown'>Format</label>
-  <select id='markdown' name='content[markdown]'>
+  <label for='content_markdown'>Format</label>
+  <select id='content_markdown' name='content[markdown]'>
     <option value='true'<%= ' selected="selected"' if(defined? @contents and @contents.markdown == true) %>>Markdown</option>
     <option value='false'<%= ' selected="selected"' if(defined? @contents and @contents.markdown == false) %>>Full HTML</option>
   </select>
