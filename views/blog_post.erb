@@ -11,7 +11,7 @@
 <% end %>
 
 <div class="pull-right share-buttons">
-<a href="http://news.ycombinator.com/submit" class="hn-share-button" data-title="<%= @contents.title %>" data-url="<%= request.url %>">Vote on HN</a>
+<a href="http://news.ycombinator.com/submit" class="hn-share-button" data-title="<%= @contents.title %>" data-url="http://<%= request.host %><%= request.path %>">Vote on HN</a>
 <script>
     (function(d, t) {
         var g = d.createElement(t),
@@ -20,10 +20,10 @@
         s.parentNode.insertBefore(g, s);
     }(document, 'script'));
 </script>
-<a href="https://twitter.com/share" class="twitter-share-button" data-via="timmillwood" data-url="<%= request.url %>" data-text="<%= @contents.title %>" data-related="timmillwood">Tweet</a>
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="timmillwood" data-url="http://<%= request.host %><%= request.path %>" data-text="<%= @contents.title %>" data-related="timmillwood">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-<iframe src="//www.facebook.com/plugins/like.php?href=<%= request.url %>&amp;send=false&amp;layout=button_count&amp;width=107&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:107px; height:21px;" allowTransparency="true"></iframe>
+<iframe src="//www.facebook.com/plugins/like.php?href=http://<%= request.host %><%= request.path %>&amp;send=false&amp;layout=button_count&amp;width=107&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:107px; height:21px;" allowTransparency="true"></iframe>
 
 <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
 <script type="IN/Share" data-counter="right"></script>
