@@ -34,7 +34,7 @@
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome-ie7.css" rel="stylesheet">
-    <link href="/css/millwoodonline.css" rel="stylesheet">
+    <link href="//static.millwoodonline.co.uk/css/millwoodonline.css" rel="stylesheet">
  
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -94,11 +94,11 @@
        <%= yield %>
        
        <% if arg(0) == 'tag' and arg(1) %>
-       <p><a href="/tag/<%= Sanitize.clean(arg(1)) %>/rss.xml"><img src="/img/feed-icon-28x28.png" alt="RSS Feed" /></a> <a href="/tag/<%= Sanitize.clean(arg(1)) %>/rss.xml">RSS Feed</a></p>
+       <p><a href="/tag/<%= Sanitize.clean(arg(1)) %>/rss.xml"><img src="//static.millwoodonline.co.uk/img/feed-icon-28x28.png" alt="RSS Feed" /></a> <a href="/tag/<%= Sanitize.clean(arg(1)) %>/rss.xml">RSS Feed</a></p>
        <% end %>
 
       <% if arg(0) == 'blog' and !arg(1) %>
-       <p><a href="/blog/rss.xml"><img src="/img/feed-icon-28x28.png" alt="RSS Feed" /></a> <a href="/blog/rss.xml">RSS Feed</a></p>
+       <p><a href="/blog/rss.xml"><img src="//static.millwoodonline.co.uk/img/feed-icon-28x28.png" alt="RSS Feed" /></a> <a href="/blog/rss.xml">RSS Feed</a></p>
        <% end %>
 
        <hr>
@@ -116,14 +116,14 @@
       <a href="https://twitter.com/timmillwood" class="twitter-follow-button" data-show-count="true" data-size="small">Follow @timmillwood</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-      <p><small>&copy; Millwood Online 2012 - Built in <img src="/img/ruby.png" alt="Ruby" /> Ruby using <img src="/img/sinatra.png" alt="Sinatra" /> Sinatra.<br/>
+      <p><small>&copy; Millwood Online 2012 - Built in <img src="//static.millwoodonline.co.uk/img/ruby.png" alt="Ruby" /> Ruby using <img src="//static.millwoodonline.co.uk/img/sinatra.png" alt="Sinatra" /> Sinatra.<br/>
       Cardiff / Abergavenny, Wales, UK - Call <a href="tel:+441873878587">01873 878587</a> or <a href="/contact">email</a>.</small></p>
     </div>  
   </footer>
 
    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.0/js/bootstrap.min.js"></script>
-   <script src="/js/millwoodonline.js"></script>
+   <script src="//static.millwoodonline.co.uk/js/millwoodonline.js"></script>
 <% if !current_user.admin? %>    
   <script type="text/javascript">
 
