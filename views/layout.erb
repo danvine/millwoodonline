@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
     <% if defined? @title %>
@@ -10,17 +10,12 @@
       <title>Millwood Online | Web Development</title>
     <% end %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <% if defined? @description %>
-      <meta name="description" content="<%= @description %>">
-    <% else %>
-     <meta name="description" content="The digital home of Tim Millwood, a PHP / Drupal & Ruby-on-Rails / Sinatra Web Developer based in Cardiff / Abergavenny, Wales, UK">
-    <% end %>
-    <% if @title and @twitter_description %>
+    <meta name="description" content="<%= @description %>">   
     <meta name="twitter:creator" content="@timmillwood">
-    <meta name="twitter:url" content="<%= request.url %>">
-    <meta name="twitter:title" content="<%= @title %>">
-    <meta name="twitter:description" content="<%= @twitter_description %>">
-    <% end %>
+    <meta name="og:url" content="<%= request.url %>">
+    <meta name="og:title" content="<%= @title ? @title : 'Millwood Online' %>">
+    <meta name="og:description" content="<%= @twitter_description ? @twitter_description : @description %>">
+    
     <link rel="author" href="https://plus.google.com/112785318169610930599">
     <meta name="author" content="Tim Millwood">
     <META NAME="robots" CONTENT="index, follow">

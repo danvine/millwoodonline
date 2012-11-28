@@ -4,6 +4,6 @@ before do
   end
 
   content_type 'text/html; charset=utf8'
-
+  @description = "The digital home of Tim Millwood, a PHP / Drupal & Ruby-on-Rails / Sinatra Web Developer based in Cardiff / Abergavenny, Wales, UK"
   @block = erb :block, :layout => false
 end
