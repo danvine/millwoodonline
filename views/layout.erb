@@ -15,7 +15,7 @@
     <meta name="og:url" content="<%= request.url %>">
     <meta name="og:title" content="<%= @title ? @title : 'Millwood Online' %>">
     <meta name="og:description" content="<%= @twitter_description ? @twitter_description : @description %>">
-    <% if arg(0)  == 'blog' and !arg(1).match(/\A[0-9]+\Z/) and @contents.file %>
+    <% if arg(0)  == 'blog' and arg(1) and !arg(1).match(/\A[0-9]+\Z/) and @contents.file %>
     <meta name="og:image" content="http://static.millwoodonline.co.uk/images/<%= @contents.file %>">
     <% end %>
     <link rel="author" href="https://plus.google.com/112785318169610930599">
@@ -33,9 +33,7 @@
         padding-top: 60px;
       }
     </style>
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome-ie7.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="//static.millwoodonline.co.uk/css/millwoodonline.css" rel="stylesheet">
  
     <!--[if lt IE 9]>
