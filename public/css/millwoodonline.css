@@ -45,3 +45,27 @@ body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; ma
     margin-left: -10px;
   }
 }
+
+@media (max-width: 767px) {  
+  .container {
+    position: relative;
+    padding-top: 145px;
+  }
+  
+  #adwrapper {
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    left: -20px;
+    padding: 0 20px;
+  }
+  
+  footer .container {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+  body .one .bsa_it_ad { background: transparent; border: none; font-family: inherit; padding: 0; margin: 0; text-align: center; }
+  body .one .bsa_it_ad .bsa_it_i { display: block; padding: 0; float: none; margin: 0 0 5px; }
+}
