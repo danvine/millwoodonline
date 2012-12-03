@@ -20,6 +20,7 @@ gem 'builder'
 gem 'redis'
 gem 'rdiscount'
 gem 'aws-s3'
+gem 'twitter'
 
 group :production do
   gem "newrelic_rpm"

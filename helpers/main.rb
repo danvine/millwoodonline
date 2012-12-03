@@ -34,6 +34,20 @@ helpers do
     REDIS.setex("archive:results",86400,results)
     return results
   end
+
+  def tweets
+    results = REDIS.get("twitter:timeline")
+    if results
+      return results
+    end
+    results = "<ul class='media-list' id='tweets'>"
+    Twitter.user_timeline("timmillwood", {:exclude_replies => true, :include_rts => false})[0..2].each do |tweet|      
+      results = "#{results} <li class='media well well-small'><img src='#{tweet[:user][:profile_image_url]}' class='pull-left media-object' alt='Tim Millwood - Twitter'><div class='media-body'><span class='label label-info'>Tweeted:</span> #{tweet[:text]}<br><small><a href='https://twitter.com/timmillwood/status/#{tweet[:id_str]}'>#{tweet[:created_at]}</a></small></div></li>"
+    end
+    results = "#{results}</ul>"
+    REDIS.setex("twitter:timeline",300,results)
+    return results
+  end
   
   def cache(tag,ttl,use_cache,block)
     page = REDIS.get(tag)

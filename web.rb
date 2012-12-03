@@ -14,6 +14,7 @@ require 'redis'
 require 'sinatra-arg'
 require 'rdiscount'
 require 'aws/s3'
+require 'twitter'
 
 require_relative 'config'
 require_relative 'models/main'
