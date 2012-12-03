@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/timmillwood/sinatra-authentication.git
-  revision: 2885e70eced034a1138a319d0d328f792e63df45
+  remote: git://github.com/maxjustus/sinatra-authentication.git
+  revision: a4be3fb79245f69f9779847e099ee1aac6dca87f
   specs:
     sinatra-authentication (0.4.2)
       dm-core
@@ -20,23 +20,10 @@ GEM
       builder
       mime-types
       xml-simple
-    bcrypt-ruby (3.0.1)
     builder (3.0.0)
-    data_mapper (1.2.0)
-      dm-aggregates (~> 1.2.0)
-      dm-constraints (~> 1.2.0)
-      dm-core (~> 1.2.0)
-      dm-migrations (~> 1.2.0)
-      dm-serializer (~> 1.2.0)
-      dm-timestamps (~> 1.2.0)
-      dm-transactions (~> 1.2.0)
-      dm-types (~> 1.2.0)
-      dm-validations (~> 1.2.0)
     data_objects (0.10.10)
       addressable (~> 2.1)
     dm-aggregates (1.2.0)
-      dm-core (~> 1.2.0)
-    dm-constraints (1.2.0)
       dm-core (~> 1.2.0)
     dm-core (1.2.0)
       addressable (~> 2.2.6)
@@ -48,32 +35,13 @@ GEM
     dm-postgres-adapter (1.2.0)
       dm-do-adapter (~> 1.2.0)
       do_postgres (~> 0.10.6)
-    dm-serializer (1.2.2)
-      dm-core (~> 1.2.0)
-      fastercsv (~> 1.5)
-      json (~> 1.6)
-      json_pure (~> 1.6)
-      multi_json (~> 1.0)
     dm-timestamps (1.2.0)
       dm-core (~> 1.2.0)
-    dm-transactions (1.2.0)
-      dm-core (~> 1.2.0)
-    dm-types (1.2.2)
-      bcrypt-ruby (~> 3.0)
-      dm-core (~> 1.2.0)
-      fastercsv (~> 1.5)
-      json (~> 1.6)
-      multi_json (~> 1.0)
-      stringex (~> 1.4)
-      uuidtools (~> 2.1)
     dm-validations (1.2.0)
       dm-core (~> 1.2.0)
     do_postgres (0.10.10)
       data_objects (= 0.10.10)
-    fastercsv (1.5.5)
     i18n (0.6.1)
-    json (1.7.5)
-    json_pure (1.7.5)
     kgio (2.7.4)
     mail (2.4.4)
       i18n (>= 0.4.0)
@@ -82,7 +50,6 @@ GEM
     maruku (0.6.1)
       syntax (>= 1.0.0)
     mime-types (1.19)
-    multi_json (1.3.6)
     newrelic_rpm (3.5.0.1)
     nokogiri (1.5.5)
     polyglot (0.3.3)
@@ -108,7 +75,6 @@ GEM
     sinatra-arg (0.0.1)
     sinbook (0.1.9)
       yajl-ruby
-    stringex (1.4.0)
     syntax (1.0.0)
     tilt (1.3.3)
     treetop (1.4.11)
@@ -118,7 +84,6 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    uuidtools (2.1.3)
     xml-simple (1.1.2)
     yajl-ruby (1.1.0)
 
@@ -128,7 +93,9 @@ PLATFORMS
 DEPENDENCIES
   aws-s3
   builder
-  data_mapper
+  dm-aggregates
+  dm-core
+  dm-migrations
   dm-postgres-adapter
   maruku
   newrelic_rpm

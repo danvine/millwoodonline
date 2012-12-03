@@ -68,7 +68,7 @@ get '/blog/:title/?' do
   end
   n=200
   @twitter_description = Sanitize.clean(@contents.body.split(/\s+/, n+1)[0...n].join(' '))
-  html = erb :blog_post
+  html = erb File.read './views/blog_post.erb'
   set_cache(html)
 end
 
