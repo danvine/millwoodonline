@@ -16,7 +16,7 @@ xml.instruct! :xml, :version => "1.0", :encoding => "UTF-8"
       xml.pubDate Time.parse(@contents.first(:fields => [:created]).created.to_s).rfc822
       @contents.each do |content|
         if content.markdown
-          body = Maruku.new(content.body).to_html
+          body = RDiscount.new(content.body).to_html
         else
           body = content.body
         end

@@ -1,6 +1,6 @@
 <% @contents.each do |content|
     if content.markdown
-      body = Maruku.new(content.body).to_html
+      body = RDiscount.new(content.body).to_html
     else
       body = content.body
     end

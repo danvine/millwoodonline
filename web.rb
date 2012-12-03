@@ -12,7 +12,7 @@ require 'pony'
 require 'builder'
 require 'redis'
 require 'sinatra-arg'
-require 'maruku'
+require 'rdiscount'
 require 'aws/s3'
 
 require_relative 'config'

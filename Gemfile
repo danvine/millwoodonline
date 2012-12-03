@@ -18,7 +18,7 @@ gem 'sanitize'
 gem 'pony'
 gem 'builder'
 gem 'redis'
-gem 'maruku'
+gem 'rdiscount'
 gem 'aws-s3'
 
 group :production do

@@ -63,7 +63,7 @@ get '/blog/:title/?' do
   @title = @contents.title
   @description = "A blog post about #{@contents.tags.map{|tag| tag.tag}.join(', ')} posted on #{@contents.created.strftime("%d %B %Y")} by Tim Millwood"
   if @contents.markdown
-    body = Maruku.new(@contents.body)
+    body = RDiscount.new(@contents.body)
     @contents.body = body.to_html
   end
   n=200
