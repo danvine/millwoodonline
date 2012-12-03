@@ -18,6 +18,22 @@ helpers do
     )
     return filename
   end
+
+  def archive
+    results = REDIS.get("archive:results")
+    if results
+      return results
+    end
+    archive = repository(:default).adapter.select("select to_char(created, 'YYYY MM') as created_year_month, count(id) as num from contents where published = TRUE and type = 'blog' group by created_year_month order by created_year_month desc")
+    results = "<ul>"
+    archive.each do |month|
+      month_split = month[:created_year_month].split(' ')
+      results = "#{results} <li><a href='/archive/#{month_split[0]}#{month_split[1]}'>#{Date::MONTHNAMES[month_split[1].to_i]} #{month_split[0]}</a> (#{month[:num].to_s})</li>"
+    end
+    results = "#{results}</ul>"
+    REDIS.setex("archive:results",86400,results)
+    return results
+  end
   
   def cache(tag,ttl,use_cache,block)
     page = REDIS.get(tag)

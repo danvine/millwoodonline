@@ -101,7 +101,6 @@ DEPENDENCIES
   newrelic_rpm
   pony
   rack-canonical-host
-  rack-flash3
   rack_csrf
   redis
   sanitize

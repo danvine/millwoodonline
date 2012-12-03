@@ -1,5 +1,4 @@
 require 'rack/csrf'
-require 'rack-flash'
 require 'rack-canonical-host'
 
 require 'sinatra'

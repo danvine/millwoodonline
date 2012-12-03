@@ -125,13 +125,7 @@ get '/archive' do
   if html
     return html
   end
-  archive = repository(:default).adapter.select("select to_char(created, 'YYYY MM') as created_year_month, count(id) as num from contents where published = TRUE and type = 'blog' group by created_year_month order by created_year_month desc")
-  results = "<ul>"
-  archive.each do |month|
-    month_split = month[:created_year_month].split(' ')
-    results = "#{results} <li><a href='/archive/#{month_split[0]}#{month_split[1]}'>#{Date::MONTHNAMES[month_split[1].to_i]} #{month_split[0]}</a> (#{month[:num].to_s})</li>"
-  end
-  results = "#{results}</ul>"
+  results = archive
   @title = "Archive"
   @description = "An archive of Millwood Online Blog posts."
   html = erb results
@@ -193,7 +187,6 @@ post '/contact/?' do
   
   Pony.mail(options)
   
-  flash[:notice] = "Thank you for your message."
   redirect '/contact'
 end
 
