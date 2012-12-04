@@ -134,19 +134,20 @@ end
 get '/archive/:date/?:page?/?' do
   halt 404 if params[:date] and (!params[:date].match(/\A[0-9]+\Z/) or params[:date].length != 6)
   halt 404 if params[:page] and !params[:page].match(/\A[0-9]+\Z/)
-  date = params[:date].scan(/.{1,4}/).map {|id| id.to_i }
   html = is_cached
   if html
     return html
   end
+  date = params[:date].scan(/.{1,4}/).map {|id| id.to_i }
   page = 1
+  from = "#{date[0]}-#{date[1]}-01"
+  to = (date[1] == 12) ? "#{date[0]+1}-01-01" : "#{date[0]}-#{date[1]+1}-01"
   if params[:page]
     page = params[:page].to_i
     offset = 5*page-5
-    @contents = Content.all(:fields => [:title, :body, :alias, :created, :markdown], :conditions => [ 'created >= ? and created < ?', "#{date[0]}-#{date[1]}-01", "#{date[0]}-#{date[1]+1}-01"], :type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5, :offset => offset)
-    
+    @contents = Content.all(:fields => [:title, :body, :alias, :created, :markdown], :conditions => [ 'created >= ? and created < ?', from, to], :type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5, :offset => offset)  
   else
-    @contents = Content.all(:fields => [:title, :body, :alias, :created, :markdown], :conditions => [ 'created >= ? and created < ?', "#{date[0]}-#{date[1]}-01", "#{date[0]}-#{date[1]+1}-01"], :type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5)
+    @contents = Content.all(:fields => [:title, :body, :alias, :created, :markdown], :conditions => [ 'created >= ? and created < ?', from, to], :type => 'blog', :published => true, :order => [ :created.desc ], :limit => 5)
   end
   halt 404 if @contents.empty?
 
