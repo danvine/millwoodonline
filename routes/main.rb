@@ -9,15 +9,25 @@ get '/?' do
 end
 
 get '/about/?' do
+  html = is_cached
+  if html
+    return html
+  end
   @title = 'About'
   @description = 'Tim Millwood is a web developer based in Cardiff / Abergavenny, Wales, UK working on Drupal, Ruby-on-Rails and Sinatra.'
-  cache_url(3600, true) {erb :about}
+  html = erb :about
+  set_cache(html)
 end
 
 get '/work/?' do
+  html = is_cached
+  if html
+    return html
+  end
   @title = 'Work'
   @description = 'Tim Millwood currently works at Acquia as a Client advisor. He is also taking on Drupal, Ruby-on-Rals and Sinatra freelance website design and development projects.'
-  cache_url(3600, true) {erb :work}
+  html = erb :work
+  set_cache(html)
 end
 
 get '/blog/?:page?/?' do

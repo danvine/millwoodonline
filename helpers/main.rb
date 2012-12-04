@@ -45,27 +45,8 @@ helpers do
       results = "#{results} <li class='media well well-small'><img src='#{tweet[:user][:profile_image_url]}' class='pull-left media-object' alt='Tim Millwood - Twitter'><div class='media-body'><span class='label label-info'>Tweeted:</span> #{auto_link(tweet[:text])}<br><small><a href='https://twitter.com/timmillwood/status/#{tweet[:id].to_s}'>#{tweet[:created_at].strftime("%d %b %Y - %l:%M%P")}</a></small></div></li>"
     end
     results = "#{results}</ul>"
-    REDIS.setex("twitter:timeline",300,results)
+    REDIS.setex("twitter:timeline",3600,results)
     return results
-  end
-  
-  def cache(tag,ttl,use_cache,block)
-    page = REDIS.get(tag)
-    if page and use_cache and !logged_in?
-      ttl = REDIS.ttl(tag)
-      response.header['redis-ttl'] = ttl.to_s
-      response.header['redis'] = 'HIT'
-      return page
-    else
-      page = block.call
-      REDIS.setex(tag,ttl,page) if use_cache and !logged_in?
-      response.header['redis'] = 'MISS'
-      return page 
-    end
-  end
-
-  def cache_url(ttl=300,use_cache=true,&block)
-    cache("url:#{request.url}",ttl,use_cache,block)
   end
   
   def is_cached
