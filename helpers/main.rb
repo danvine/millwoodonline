@@ -31,7 +31,7 @@ helpers do
       results = "#{results} <li><a href='/archive/#{month_split[0]}#{month_split[1]}'>#{Date::MONTHNAMES[month_split[1].to_i]} #{month_split[0]}</a> (#{month[:num].to_s})</li>"
     end
     results = "#{results}</ul>"
-    REDIS.setex("archive:results",86400,results)
+    REDIS.setex("archive:results",10800,results)
     return results
   end
 
@@ -42,7 +42,7 @@ helpers do
     end
     results = "<ul class='media-list' id='tweets'>"
     Twitter.user_timeline("timmillwood", {:exclude_replies => true, :include_rts => false})[0..2].each do |tweet|      
-      results = "#{results} <li class='media well well-small'><img src='#{tweet[:user][:profile_image_url]}' class='pull-left media-object' alt='Tim Millwood - Twitter'><div class='media-body'><span class='label label-info'>Tweeted:</span> #{tweet[:text]}<br><small><a href='https://twitter.com/timmillwood/status/#{tweet[:id].to_s}'>#{tweet[:created_at].strftime("%d %b %Y - %l:%M%P")}</a></small></div></li>"
+      results = "#{results} <li class='media well well-small'><img src='#{tweet[:user][:profile_image_url]}' class='pull-left media-object' alt='Tim Millwood - Twitter'><div class='media-body'><span class='label label-info'>Tweeted:</span> #{auto_link(tweet[:text])}<br><small><a href='https://twitter.com/timmillwood/status/#{tweet[:id].to_s}'>#{tweet[:created_at].strftime("%d %b %Y - %l:%M%P")}</a></small></div></li>"
     end
     results = "#{results}</ul>"
     REDIS.setex("twitter:timeline",300,results)

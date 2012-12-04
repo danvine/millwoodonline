@@ -21,6 +21,7 @@ gem 'redis'
 gem 'rdiscount'
 gem 'aws-s3'
 gem 'twitter'
+gem 'twitter-text'
 
 group :production do
   gem "newrelic_rpm"

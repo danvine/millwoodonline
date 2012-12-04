@@ -15,6 +15,8 @@ require 'sinatra-arg'
 require 'rdiscount'
 require 'aws/s3'
 require 'twitter'
+require 'twitter-text'
+include Twitter::Autolink
 
 require_relative 'config'
 require_relative 'models/main'
