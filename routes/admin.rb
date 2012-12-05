@@ -5,7 +5,7 @@ end
 get '/admin/content/?' do
   @contents = Content.all(:order => [ :created.desc ])
   @title = 'Content'
-  erb :content
+  erb File.read './views/content.erb'
 end
 
 get '/admin/content/edit/:id/?' do
@@ -13,7 +13,7 @@ get '/admin/content/edit/:id/?' do
   @contents = Content.first(:order => [ :created.desc ], :id => id)
   @title = "Edit '#{@contents.title}'"
  
-  erb :addcontent
+  erb File.read './views/addcontent.erb'
 end
 
 post '/admin/content/edit/:id/?' do
@@ -41,7 +41,7 @@ end
 
 get '/admin/content/add/?' do
   @title = 'Add Content'
-  erb :addcontent
+  erb File.read './views/addcontent.erb'
 end
 
 post '/admin/content/add/?' do
