@@ -5,5 +5,5 @@ before do
 
   content_type 'text/html; charset=utf8'
   @description = "The digital home of Tim Millwood, a PHP / Drupal & Ruby-on-Rails / Sinatra Web Developer based in Cardiff / Abergavenny, Wales, UK"
-  @block = erb :block, :layout => false if arg(0) != 'admin'
+  @block = erb(File.read('./views/block.erb'), :layout => false) if arg(0) != 'admin'
 end
