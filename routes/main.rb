@@ -7,7 +7,7 @@ get '/?' do
   if @contents and @contents.markdown
     @contents.body = RDiscount.new(@contents.body).to_html
   end
-  html = erb :home
+  html = erb File.read './views/home.erb'
   set_cache(html)
 end
 
@@ -18,7 +18,7 @@ get '/about/?' do
   end
   @title = 'About'
   @description = 'Tim Millwood is a web developer based in Cardiff / Abergavenny, Wales, UK working on Drupal, Ruby-on-Rails and Sinatra.'
-  html = erb :about
+  html = erb File.read './views/about.erb;
   set_cache(html)
 end
 
@@ -29,7 +29,7 @@ get '/work/?' do
   end
   @title = 'Work'
   @description = 'Tim Millwood currently works at Acquia as a Client advisor. He is also taking on Drupal, Ruby-on-Rals and Sinatra freelance website design and development projects.'
-  html = erb :work
+  html = erb File.read './views/work.erb'
   set_cache(html)
 end
 
@@ -56,7 +56,7 @@ get '/blog/?:page?/?' do
   @pager = "<ul class='pager'>#{pager_prev}#{pager_next}</ul>"
   @title = 'Blog'
   @description = 'Millwood Online Blog features many articles on Drupal, Ruby-on-Rails, Sinatra and related Web Development topics.'
-  html = erb :blog
+  html = erb File.read './views/blog';
   set_cache(html)
 end
 
@@ -128,7 +128,7 @@ get '/tag/:tag/?:page?/?' do
   @pager = "<ul class='pager'>#{pager_prev}#{pager_next}</ul>"
   @title = "#{Sanitize.clean(params[:tag]).gsub('-', ' ').capitalize}"
   @description = "Blog posts relating to #{Sanitize.clean(params[:tag]).gsub('-', ' ').capitalize}."
-  html = erb :blog
+  html = erb File.read './views/blog.erb'
   set_cache(html)
 end
 
@@ -170,14 +170,14 @@ get '/archive/:date/?:page?/?' do
   @pager = "<ul class='pager'>#{pager_prev}#{pager_next}</ul>"
   @title = "Archive - #{Date::MONTHNAMES[date[1]]} #{date[0]}"
   @description = "Archive of blog posts from #{Date::MONTHNAMES[date[1]]} #{date[0]} featuring topics such as Drupal, Ruby-on-Rails, Sinatra and web development."
-  html = erb :blog
+  html = erb File.read './views/blog.erb'
   set_cache(html)
 end
 
 get '/contact/?' do
   @title = 'Contact'
   @description = "Call 01873 878587 or email Tim Millwood."
-  erb :contact
+  erb File.read './views/contact.erb'
 end
 
 post '/contact/?' do
@@ -206,13 +206,13 @@ end
 get '/php-drupal-web-developer-cardiff-abergavenny-wales-uk' do
   @head_title = "Drupal Web Design and Development | Cardiff / Abergavenny, Wales, UK"
   @description = "With over 5 years of Drupal development experience, working in Cardiff / Abergavenny, Wales, UK for international clients."
-  erb :drupal
+  erb File.read './views/drupal.erb'
 end
 
 get '/ruby-on-rails-sinatra-web-developer-cardiff-abergavenny-wales-uk' do
   @head_title = "Ruby on Rails / Sinatra Web Design and Development | Cardiff / Abergavenny, Wales, UK"
   @description = "We're looking to take on Ruby-on-Rails and Sinatra web development projects, working from Cardiff / Abergavenny, Wales, UK."
-  erb :ruby
+  erb File.read './views/ruby.erb'
 end
 
 get '/rip-drippic' do
