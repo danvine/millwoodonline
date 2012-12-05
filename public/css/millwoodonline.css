@@ -54,7 +54,7 @@ body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; ma
 @media (max-width: 767px) {  
   .container {
     position: relative;
-    padding-top: 145px;
+    padding-top: 130px;
   }
 
   .span4 {
@@ -63,11 +63,22 @@ body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 10px; ma
   
   #adwrapper {
     position: absolute;
-    top: -10px;
+    top: -20px;
     width: 100%;
     left: -20px;
-    padding: 0 20px;
+    padding: 5px 20px;
+    background-color: #222;
   }
+
+  #adpacks {
+    padding:0px;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 0;
+  }
+
+  #adpacks .one .bsa_it_ad .bsa_it_t { color: #FFF; }
+  #adpacks .one .bsa_it_ad .bsa_it_d { color: #EEE; }
   
   footer .container {
     padding-top: 10px;

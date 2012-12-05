@@ -204,14 +204,14 @@ post '/contact/?' do
 end
 
 get '/php-drupal-web-developer-cardiff-abergavenny-wales-uk' do
-  @head_title = "PHP / Drupal Web Developer based in Cardiff / Abergavenny, Wales, UK"
-  @description = "Tim Millwood is a PHP and Drupal developer working in Cardiff / Abergavenny, Wales, UK offering website design and development."
-  erb :php
+  @head_title = "Drupal Web Design and Development | Cardiff / Abergavenny, Wales, UK"
+  @description = "With over 5 years of Drupal development experience, working in Cardiff / Abergavenny, Wales, UK for international clients."
+  erb :drupal
 end
 
 get '/ruby-on-rails-sinatra-web-developer-cardiff-abergavenny-wales-uk' do
-  @head_title = "Ruby on Rails / Sinatra Web Developer based in Cardiff / Abergavenny, Wales, UK"
-  @description = "Tim Millwood is a Ruby-on-Rails and Sinatra developer working in Cardiff / Abergavenny, Wales, UK offering website design and development."
+  @head_title = "Ruby on Rails / Sinatra Web Design and Development | Cardiff / Abergavenny, Wales, UK"
+  @description = "We're looking to take on Ruby-on-Rails and Sinatra web development projects, working from Cardiff / Abergavenny, Wales, UK."
   erb :ruby
 end
 
