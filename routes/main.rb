@@ -3,7 +3,10 @@ get '/?' do
   if html
     return html
   end
-  @contents = Content.first(:fields => [:title, :alias, :created], :type => 'blog', :published => true, :order => [ :created.desc ])
+  @contents = Content.first(:type => 'blog', :published => true, :order => [ :created.desc ])
+  if @contents and @contents.markdown
+    @contents.body = RDiscount.new(@contents.body).to_html
+  end
   html = erb :home
   set_cache(html)
 end
