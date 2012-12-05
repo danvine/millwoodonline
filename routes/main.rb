@@ -18,7 +18,7 @@ get '/about/?' do
   end
   @title = 'About'
   @description = 'Tim Millwood is a web developer based in Cardiff / Abergavenny, Wales, UK working on Drupal, Ruby-on-Rails and Sinatra.'
-  html = erb File.read './views/about.erb;
+  html = erb File.read './views/about.erb'
   set_cache(html)
 end
 
@@ -56,7 +56,7 @@ get '/blog/?:page?/?' do
   @pager = "<ul class='pager'>#{pager_prev}#{pager_next}</ul>"
   @title = 'Blog'
   @description = 'Millwood Online Blog features many articles on Drupal, Ruby-on-Rails, Sinatra and related Web Development topics.'
-  html = erb File.read './views/blog';
+  html = erb File.read './views/blog.erb'
   set_cache(html)
 end
 
