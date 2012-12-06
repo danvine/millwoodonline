@@ -50,9 +50,21 @@ end
 
 get '/:alias/?' do
   url_alias = Sanitize.clean(params[:alias])
+  result = REDIS.get("redirect:#{url_alias}")
+  if result == "404"
+    response.header['redis'] = 'HIT'
+    halt 404
+  elsif result
+    response.header['redis'] = 'HIT'
+    redirect result, 301
+  end
   contents = Content.first(:fields => [:alias], :type => 'blog', :published => true, :alias => url_alias)
+  response.header['redis'] = 'MISS'
+
   if contents.nil?
+    REDIS.setex("redirect:#{url_alias}", 31536000, "404")
     halt 404
   end
+  REDIS.setex("redirect:#{url_alias}", 31536000, "/blog/#{contents.alias}")
   redirect '/blog/' + contents.alias, 301
 end
