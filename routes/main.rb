@@ -74,7 +74,7 @@ get '/blog/:title/?' do
   halt 404 if @contents.nil?
 
   @title = @contents.title
-  @description = "A blog post about #{@contents.tags.map{|tag| tag.tag}.join(', ')} posted on #{@contents.created.strftime("%d %B %Y")} by Tim Millwood"
+  @description = "Millwood Online Blog post about #{@contents.tags.map{|tag| tag.tag}.join(', ')} posted on #{@contents.created.strftime("%d %B %Y")} by Tim Millwood"
   if @contents.markdown
     @contents.body = RDiscount.new(@contents.body).to_html
   end
