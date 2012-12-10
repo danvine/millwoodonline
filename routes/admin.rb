@@ -20,7 +20,7 @@ post '/admin/content/edit/:id/?' do
   content_attributes = params[:content]
   id = Sanitize.clean(params[:id])
   content = Content.get(id)
-  content.tags.all.destroy
+  content.content_tags.all.destroy
   content_attributes['tags'].split(',').each do |tag|
     tag_data = Tag.first_or_create(:tag => tag.lstrip.rstrip)
     content.tags << tag_data
