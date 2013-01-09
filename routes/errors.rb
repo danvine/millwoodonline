@@ -13,6 +13,6 @@ end
 
 error 403 do
   @title = "403"
-  @description = "Error: 503 - Millwood Online"
+  @description = "Error: 403 - Millwood Online"
   erb "<h2>Access denied</h2>"
 end
